@@ -1,3 +1,5 @@
-import HomeBanner from "./HomeBanner";
+import IconWithText from "./IconWithText";
+import Menu from "./Menu";
+import Navbar from "./Navbar";
 
-export { HomeBanner };
+export { IconWithText, Menu, Navbar };

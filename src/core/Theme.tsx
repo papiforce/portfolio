@@ -136,7 +136,7 @@ export const theme = {
     big: "16px",
     round: "24px",
     large: "32px",
-    circle: "50%",
+    circle: "3.75em",
   },
   btnColor: {
     primary: {

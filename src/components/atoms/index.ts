@@ -1,3 +1,6 @@
+import Avatar from "./Avatar";
+import MenuItem from "./MenuItem";
 import Text from "./Text";
+import TitleWithLines from "./TitleWithLines";
 
-export { Text };
+export { Avatar, MenuItem, Text, TitleWithLines };
