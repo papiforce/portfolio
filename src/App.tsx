@@ -3,19 +3,26 @@ import styled from "styled-components";
 import { ThemeProvider } from "styled-components";
 
 import { theme } from "core/Theme";
+import { lessThan, useInnerWidth } from "utils";
 
 import { Menu, Navbar } from "components/molecules";
-import { ContactZone } from "components/organisms";
+import { ContactZone, InfosZone } from "components/organisms";
 
-const { spacing } = theme;
+const { screens, spacing } = theme;
 
 const Layout = styled.div`
   ${({ theme: { spacing } }) => `
     padding: 0 ${spacing.five};
+    ${lessThan("mobile")(`
+      padding: 0 ${spacing.two};
+    `)}
   `}
 `;
 
 const Portfolio: React.FC = () => {
+  const innerWidth = useInnerWidth();
+  const IS_MOBILE_DEVICE = innerWidth <= screens.mobile;
+
   const [currentPage, setCurrentPage] = useState<number>(0);
 
   const MENU_ITEMS = [
@@ -30,7 +37,7 @@ const Portfolio: React.FC = () => {
       case 3:
         return <ContactZone />;
       default:
-        <></>;
+        return <InfosZone />;
     }
   };
 
@@ -41,7 +48,9 @@ const Portfolio: React.FC = () => {
         <Menu
           list={MENU_ITEMS}
           onClick={(index) => setCurrentPage(index)}
-          style={{ marginBottom: spacing.five }}
+          style={{
+            marginBottom: IS_MOBILE_DEVICE ? spacing.four : spacing.five,
+          }}
         />
         {displayZone(currentPage)}
       </Layout>

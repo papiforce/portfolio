@@ -32,4 +32,11 @@ body::-webkit-scrollbar {
 
 #root {
   min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.link {
+  color: #77aca2;
+  font-weight: bold;
 }

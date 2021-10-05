@@ -1,6 +1,8 @@
 import { useState } from "react";
 import styled from "styled-components";
 
+import { lessThan } from "utils";
+
 import { MenuItem } from "components/atoms";
 
 interface ListProps {
@@ -18,7 +20,11 @@ const Container = styled.div`
   ${({ theme: { spacing } }) => `
     gap: ${spacing.two};
   `}
+  ${lessThan("mobile")(`
+    height: 100px;
+  `)}
   display: flex;
+  height: 150px;
 `;
 
 const Menu: React.FC<MenuProps> = ({ list, onClick, style }) => {
@@ -33,6 +39,7 @@ const Menu: React.FC<MenuProps> = ({ list, onClick, style }) => {
             isActive={isActive === index}
             iconName={elem.iconName}
             title={elem.title}
+            isLast={index === list.length - 1}
             onClick={() => {
               setIsActive(index);
               if (onClick) onClick(index);

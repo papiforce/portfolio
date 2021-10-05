@@ -27,7 +27,7 @@ const TextStyled = styled.div<TitleWithLinesProps>`
     width: 50%;
     height: 1px;
     content: "\a0";
-    background-color: ${(props) =>
+    background: ${(props) =>
       props.color ? props.theme.colors[props.color] : props.theme.colors.white};
   }
   :before {

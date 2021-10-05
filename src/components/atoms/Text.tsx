@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export interface TextProps {
   color?: string;
+  text?: string;
   fontSize: string;
   fontWeight: string;
   isEllipsis?: boolean;
@@ -39,6 +40,7 @@ const TextStyle = styled.div<TextProps>`
 
 const Text: React.FC<TextProps> = ({
   children,
+  text = "",
   fontSize,
   fontWeight,
   color,
@@ -49,6 +51,23 @@ const Text: React.FC<TextProps> = ({
   onClick,
   ...props
 }) => {
+  if (text) {
+    return (
+      <TextStyle
+        fontSize={fontSize}
+        fontWeight={fontWeight}
+        color={color}
+        textAlign={textAlign}
+        lineHeight={lineHeight}
+        isEllipsis={isEllipsis}
+        style={style}
+        onClick={onClick}
+        {...props}
+        dangerouslySetInnerHTML={{ __html: text }}
+      />
+    );
+  }
+
   return (
     <TextStyle
       fontSize={fontSize}
