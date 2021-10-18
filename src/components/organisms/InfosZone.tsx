@@ -22,7 +22,7 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
   ${lessThan("mobile")(`
-    padding-bottom: ${spacing.ten};
+    padding-bottom: ${spacing.twenty};
   `)}
   padding-bottom: ${spacing.sixteen};
   max-height: 100%;
@@ -89,7 +89,7 @@ const InfosZone: React.FC = () => {
       iconName: "fas fa-user-graduate",
       title: "HETIC",
       subtitle: "Bachelor Développeur Web",
-      date: "Octobre 2021 - Maintenant",
+      date: "Octobre 2021 - Septembre 2022",
     },
     {
       iconName: "fas fa-user-tie",
@@ -115,19 +115,19 @@ const InfosZone: React.FC = () => {
       description: "Contrat étudiant (15h)",
     },
     {
+      iconName: "fas fa-user-tie",
+      title: "Employé polyvalent",
+      subtitle: "Leader Price",
+      date: "Janvier - Août 2018",
+      description: "Contrat étudiant (15h)",
+    },
+    {
       iconName: "fas fa-user-graduate",
       title: "Université Gustave Eiffel",
       subtitle: "Licence Maths et Informatique",
       date: "Septembre 2017 - Avril 2019",
       description:
         "Apprentissage des bases de la logique, de l'algorithmie et de la programmation et particulièrement en Python",
-    },
-    {
-      iconName: "fas fa-user-tie",
-      title: "Employé polyvalent",
-      subtitle: "Leader Price",
-      date: "Janvier - Août 2018",
-      description: "Contrat étudiant (15h)",
     },
     {
       iconName: "fas fa-user-graduate",

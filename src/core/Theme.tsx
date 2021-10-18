@@ -88,6 +88,10 @@ export const theme = {
     fourteen: "112px",
     fifteen: "120px",
     sixteen: "128px",
+    seventeen: "136px",
+    eighteen: "144px",
+    nineteen: "152px",
+    twenty: "160px",
   },
   fontSize: {
     extraSmall: "9px",
@@ -137,6 +141,7 @@ export const theme = {
     round: "24px",
     large: "32px",
     circle: "3.75em",
+    fullCircle: "50%",
   },
   btnColor: {
     primary: {

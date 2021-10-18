@@ -6,7 +6,7 @@ import { theme } from "core/Theme";
 import { lessThan, useInnerWidth } from "utils";
 
 import { Menu, Navbar } from "components/molecules";
-import { ContactZone, InfosZone } from "components/organisms";
+import { ContactZone, InfosZone, SkillsZone } from "components/organisms";
 
 const { screens, spacing } = theme;
 
@@ -34,6 +34,8 @@ const Portfolio: React.FC = () => {
 
   const displayZone = (page: number) => {
     switch (page) {
+      case 1:
+        return <SkillsZone />;
       case 3:
         return <ContactZone />;
       default:

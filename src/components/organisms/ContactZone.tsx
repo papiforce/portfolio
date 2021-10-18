@@ -90,7 +90,7 @@ const ContactZone: React.FC = () => {
                 onClick={item.onClick}
                 style={{
                   marginLeft: "auto",
-                  marginRight: IS_MOBILE_DEVICE ? "auto" : 0,
+                  marginRight: IS_TABLET_DEVICE ? "auto" : 0,
                 }}
               />
             );
