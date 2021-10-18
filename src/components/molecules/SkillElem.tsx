@@ -33,10 +33,7 @@ const CenterDiv = styled.div`
 `;
 
 const IconWrapper = styled.span`
-  ${({ theme: { colors, spacing } }) => `
-    margin: 0 auto ${spacing.one};
-    color: ${colors.blueDark};
-  `}
+  margin: ${({ theme: { spacing } }) => `0 auto ${spacing.one}`};
   font-size: 64px;
 `;
 
@@ -53,7 +50,7 @@ const SkillElem: React.FC<SkillElemProps> = ({
           <IconWrapper>
             <i className={iconName}></i>
           </IconWrapper>
-          <Text fontSize="display4" fontWeight="semiBold" color="blueDark">
+          <Text fontSize="display4" fontWeight="semiBold" color="orange">
             {label}
           </Text>
         </CenterDiv>
