@@ -1,9 +1,14 @@
 import styled from "styled-components";
 
 import { theme } from "core/Theme";
-import { lessThan, useInnerWidth } from "utils";
+import { between, lessThan, useInnerWidth } from "utils";
+
+import Scanverse from "assets/scanverse/scanverse.png";
+import Koliving from "assets/koliving/koliving.png";
+import Kamunity from "assets/kamunity/kamunity.png";
 
 import { TitleWithLines } from "components/atoms";
+import { ProjectCard } from "components/molecules";
 
 const { screens, spacing } = theme;
 
@@ -19,9 +24,53 @@ const Container = styled.div`
   margin: 0 auto;
 `;
 
+const Wrapper = styled.div`
+  ${lessThan("tablet")(`
+    padding-bottom: ${spacing.twenty};
+  `)}
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-height: 100%;
+  overflow-y: scroll;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+`;
+
 const ProjectsZone: React.FC = () => {
   const innerWidth = useInnerWidth();
   const IS_MOBILE_DEVICE = innerWidth <= screens.mobile;
+
+  const PROJECTS = [
+    {
+      name: "Kamunity",
+      images: [Kamunity],
+      technos: "React, Typescript, styled-components",
+      inDev: true,
+      link: "http://kamunity.herokuapp.com/",
+      description:
+        "Refonte du site internet de l'association Kamunity dans le but de rendre service à un ami et ainsi contribuer indirectement au développement de Kamunity.",
+    },
+    {
+      name: "Koliving",
+      images: [Koliving],
+      technos: "React, Typescript, styled-components, Hooks, GraphQL",
+      inDev: false,
+      link: "https://koliving.fr/",
+      description:
+        "Participation à l'intégration des maquettes faites sur Figma, le développement du site s'est fait from scratch.",
+    },
+    {
+      name: "Scanverse",
+      images: [Scanverse],
+      technos: "React, Typescript & styled-components, Hooks",
+      inDev: true,
+      link: "https://scanverse.netlify.app/",
+      description:
+        "Plateforme permettant de noter sa progression dans la lecture de scans, elle a pour objectif de regrouper les mangas, les webtoons ainsi que les manwhas.",
+    },
+  ];
 
   return (
     <Container>
@@ -34,6 +83,17 @@ const ProjectsZone: React.FC = () => {
       >
         Mes projets
       </TitleWithLines>
+      <Wrapper>
+        {PROJECTS.map((project, index) => {
+          return (
+            <ProjectCard
+              key={index}
+              name={project.name}
+              imgUrl={project.images[0]}
+            />
+          );
+        })}
+      </Wrapper>
     </Container>
   );
 };

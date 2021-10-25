@@ -33,6 +33,31 @@ const SocialWrapper = styled.div`
   flex-direction: column;
 `;
 
+// const BtnWrapper = styled.a`
+//   ${({ theme: { spacing, colors, borderRadius } }) => `
+//     padding: ${spacing.one};
+//     background: ${colors.primary};
+//     border-radius: ${borderRadius.big};
+//     margin: ${spacing.ten} auto;
+//     gap: ${spacing.one};
+//     color: ${colors.white};
+
+//     :hover {
+//       background: ${colors.primaryHover};
+//     }
+//   `}
+//   text-decoration: none;
+//   cursor: pointer;
+//   width: 120px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// `;
+
+// const IconWrapper = styled.span`
+//   font-size: ${({ theme: { fontSize } }) => fontSize.title0};
+// `;
+
 const ContactZone: React.FC = () => {
   const innerWidth = useInnerWidth();
   const IS_TABLET_DEVICE = innerWidth <= screens.tablet;
@@ -97,6 +122,19 @@ const ContactZone: React.FC = () => {
           })}
         </SocialWrapper>
       </Wrapper>
+      {/* <BtnWrapper href="/src/assets/Emmanuel_CV.pdf" target="_blank">
+        <Text
+          fontSize={IS_MOBILE_DEVICE ? "display5" : "title5"}
+          fontWeight="semiBold"
+          textAlign="center"
+          style={{ cursor: "pointer" }}
+        >
+          CV
+        </Text>
+        <IconWrapper>
+          <i className="fas fa-eye"></i>
+        </IconWrapper>
+      </BtnWrapper> */}
     </Container>
   );
 };
