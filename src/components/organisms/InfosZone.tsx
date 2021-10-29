@@ -95,7 +95,7 @@ const InfosZone: React.FC = () => {
       iconName: "fas fa-user-tie",
       title: "Développeur Front-End",
       subtitle: "Koliving",
-      date: "Octobre 2021 - Septembre 2022",
+      date: "Octobre 2020 - Septembre 2021",
       description:
         "Contrat d'apprentissage<br>React (Typescript, styled-components, Hooks, GraphQL)<br><a class='link' href='https://koliving.fr/' target='_blank'>Site Koliving</a>",
     },

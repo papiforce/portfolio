@@ -1,14 +1,15 @@
+import { useState } from "react";
 import styled from "styled-components";
 
 import { theme } from "core/Theme";
-import { between, lessThan, useInnerWidth } from "utils";
+import { lessThan, useInnerWidth } from "utils";
 
-import Scanverse from "assets/scanverse/scanverse.png";
-import Koliving from "assets/koliving/koliving.png";
-import Kamunity from "assets/kamunity/kamunity.png";
+import { Scanverse, Scanverse2 } from "assets/scanverse";
+import { Koliving, Koliving2, Koliving3 } from "assets/koliving";
+// import Kamunity from "assets/kamunity/kamunity.png";
 
 import { TitleWithLines } from "components/atoms";
-import { ProjectCard } from "components/molecules";
+import { ProjectCard, ProjectModal } from "components/molecules";
 
 const { screens, spacing } = theme;
 
@@ -42,19 +43,27 @@ const ProjectsZone: React.FC = () => {
   const innerWidth = useInnerWidth();
   const IS_MOBILE_DEVICE = innerWidth <= screens.mobile;
 
+  const [isHidden, setIsHidden] = useState<boolean>(true);
+  const [modalContent, setModalContent] = useState<any>({
+    name: "",
+    images: [],
+    technos: "",
+    description: "",
+  });
+
   const PROJECTS = [
-    {
-      name: "Kamunity",
-      images: [Kamunity],
-      technos: "React, Typescript, styled-components",
-      inDev: true,
-      link: "http://kamunity.herokuapp.com/",
-      description:
-        "Refonte du site internet de l'association Kamunity dans le but de rendre service à un ami et ainsi contribuer indirectement au développement de Kamunity.",
-    },
+    // {
+    //   name: "Kamunity",
+    //   images: [Kamunity],
+    //   technos: "React, Typescript, styled-components",
+    //   inDev: true,
+    //   link: "http://kamunity.herokuapp.com/",
+    //   description:
+    //     "Refonte du site internet de l'association Kamunity dans le but de rendre service à un ami et ainsi contribuer indirectement au développement de Kamunity.",
+    // },
     {
       name: "Koliving",
-      images: [Koliving],
+      images: [Koliving, Koliving2, Koliving3],
       technos: "React, Typescript, styled-components, Hooks, GraphQL",
       inDev: false,
       link: "https://koliving.fr/",
@@ -63,7 +72,7 @@ const ProjectsZone: React.FC = () => {
     },
     {
       name: "Scanverse",
-      images: [Scanverse],
+      images: [Scanverse, Scanverse2],
       technos: "React, Typescript & styled-components, Hooks",
       inDev: true,
       link: "https://scanverse.netlify.app/",
@@ -90,9 +99,20 @@ const ProjectsZone: React.FC = () => {
               key={index}
               name={project.name}
               imgUrl={project.images[0]}
+              onClick={() => {
+                setIsHidden(false);
+                setModalContent(
+                  PROJECTS.find((elem) => elem.name === project.name)
+                );
+              }}
             />
           );
         })}
+        <ProjectModal
+          isHidden={isHidden}
+          content={modalContent}
+          onClose={() => setIsHidden(true)}
+        />
       </Wrapper>
     </Container>
   );
