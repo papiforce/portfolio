@@ -75,13 +75,13 @@ const InfosZone: React.FC = () => {
   const LEFT_INFOS = [
     "Emmanuel KASOMO",
     "21 ans",
-    "Actuellement en 3ème annéee du Bachelor Développeur Web à HETIC",
+    "Actuellement en 3ème année du Bachelor Développeur Web à HETIC",
   ];
 
   const RIGHT_INFOS = [
     "Recherche activement un contrat d'alternance (apprentissage ou professionnalisation)",
     "1 semaine en formation / 3 semaines en entreprise",
-    "Début dés que possible",
+    "Disponible immédiatement",
   ];
 
   const TIMELINE_ITEMS = [
