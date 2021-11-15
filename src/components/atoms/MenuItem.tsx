@@ -10,6 +10,7 @@ interface MenuItemProps {
   iconName: string;
   title: string;
   isLast?: boolean;
+  mode: string;
   onClick?: () => void;
   style?: React.CSSProperties;
 }
@@ -48,11 +49,13 @@ const MenuItem: React.FC<MenuItemProps> = ({
   iconName,
   title,
   isLast = false,
+  mode,
   onClick,
   style,
 }) => {
   const innerWidth = useInnerWidth();
   const IS_MOBILE_DEVICE = innerWidth <= screens.mobile;
+  const isDark = mode.replaceAll(`"`, "") === "dark";
 
   return (
     <Container isActive={isActive} onClick={onClick} style={style}>
@@ -61,6 +64,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
         <Text
           fontSize={IS_MOBILE_DEVICE ? "display3" : "display0"}
           fontWeight="medium"
+          color={isDark ? "white" : "black"}
           style={{
             position: "absolute",
             bottom: "10px",
@@ -74,6 +78,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
         <Text
           fontSize={IS_MOBILE_DEVICE ? "display3" : "display0"}
           fontWeight="medium"
+          color={isDark ? "white" : "black"}
           style={{
             position: "absolute",
             bottom: "10px",

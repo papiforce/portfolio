@@ -15,6 +15,7 @@ interface ListProps {
 
 interface TimeLineProps {
   list: ListProps[];
+  mode: string;
   style?: React.CSSProperties;
 }
 
@@ -45,7 +46,7 @@ const Container = styled.div`
   flex-direction: column;
 `;
 
-const TimeLine: React.FC<TimeLineProps> = ({ list, style }) => {
+const TimeLine: React.FC<TimeLineProps> = ({ list, mode, style }) => {
   return (
     <Container style={style}>
       {list.map((elem, index) => {
@@ -57,6 +58,7 @@ const TimeLine: React.FC<TimeLineProps> = ({ list, style }) => {
             subtitle={elem.subtitle}
             date={elem.date}
             description={elem.description}
+            mode={mode}
             style={{ zIndex: 2 }}
           />
         );

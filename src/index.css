@@ -26,6 +26,14 @@ body {
   margin: 0;
 }
 
+.dark-theme {
+  background: url("assets/background.png");
+}
+
+.light-theme {
+  background: url("assets/background_light.png");
+}
+
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none;

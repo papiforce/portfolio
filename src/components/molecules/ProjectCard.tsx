@@ -7,6 +7,7 @@ import { Text } from "components/atoms";
 interface ProjetCardProps {
   imgUrl: string;
   name: string;
+  mode: string;
   onClick?: () => void;
   style?: React.CSSProperties;
 }
@@ -30,9 +31,13 @@ const Container = styled.div`
   cursor: pointer;
 `;
 
-const Wallpaper = styled.img`
-  ${({ theme: { borderRadius, colors, spacing } }) => `
-    border: 2px solid ${colors.white};
+const Wallpaper = styled.img<{ mode: string }>`
+  ${({ theme: { borderRadius, colors, spacing }, mode }) => `
+    border: ${
+      mode.replaceAll(`"`, "") === "dark"
+        ? `2px solid ${colors.white}`
+        : `2px solid ${colors.black}`
+    };
     border-radius: ${borderRadius.small};
     margin-bottom: ${spacing.two};
   `}
@@ -43,15 +48,19 @@ const Wallpaper = styled.img`
 const ProjetCard: React.FC<ProjetCardProps> = ({
   imgUrl,
   name,
+  mode,
   onClick,
   style,
 }) => {
+  const isDark = mode.replaceAll(`"`, "") === "dark";
+
   return (
     <Container onClick={onClick} style={style}>
-      <Wallpaper src={imgUrl} alt={name} />
+      <Wallpaper src={imgUrl} alt={name} mode={mode} />
       <Text
         fontSize="display5"
         fontWeight="medium"
+        color={isDark ? "white" : "black"}
         textAlign="center"
         style={{ textTransform: "uppercase", cursor: "pointer" }}
       >

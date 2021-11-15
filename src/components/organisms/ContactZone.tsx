@@ -6,6 +6,10 @@ import { lessThan, useInnerWidth } from "utils";
 import { TitleWithLines, Text } from "components/atoms";
 import { IconWithText } from "components/molecules";
 
+interface ContactZoneProps {
+  mode: string;
+}
+
 const { screens, spacing } = theme;
 
 const Container = styled.div`
@@ -58,10 +62,11 @@ const SocialWrapper = styled.div`
 //   font-size: ${({ theme: { fontSize } }) => fontSize.title0};
 // `;
 
-const ContactZone: React.FC = () => {
+const ContactZone: React.FC<ContactZoneProps> = ({ mode }) => {
   const innerWidth = useInnerWidth();
   const IS_TABLET_DEVICE = innerWidth <= screens.tablet;
   const IS_MOBILE_DEVICE = innerWidth <= screens.mobile;
+  const isDark = mode.replaceAll(`"`, "") === "dark";
 
   const CONTACT_ITEMS = [
     {
@@ -86,6 +91,7 @@ const ContactZone: React.FC = () => {
       <TitleWithLines
         fontSize={IS_MOBILE_DEVICE ? "display0" : "title0"}
         fontWeight="medium"
+        color={isDark ? "white" : "black"}
         style={{
           marginBottom: IS_MOBILE_DEVICE ? spacing.three : spacing.four,
         }}
@@ -97,6 +103,7 @@ const ContactZone: React.FC = () => {
           fontSize={IS_MOBILE_DEVICE ? "display5" : "display2"}
           fontWeight="medium"
           textAlign={IS_TABLET_DEVICE ? "center" : "left"}
+          color={isDark ? "white" : "black"}
           style={{
             maxWidth: IS_TABLET_DEVICE ? "100%" : "550px",
             marginBottom: IS_TABLET_DEVICE ? spacing.four : 0,

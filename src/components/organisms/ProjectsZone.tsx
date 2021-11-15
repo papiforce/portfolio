@@ -11,6 +11,10 @@ import { Koliving, Koliving2, Koliving3 } from "assets/koliving";
 import { TitleWithLines } from "components/atoms";
 import { ProjectCard, ProjectModal } from "components/molecules";
 
+interface ProjectsZoneProps {
+  mode: string;
+}
+
 const { screens, spacing } = theme;
 
 const Container = styled.div`
@@ -39,9 +43,10 @@ const Wrapper = styled.div`
   }
 `;
 
-const ProjectsZone: React.FC = () => {
+const ProjectsZone: React.FC<ProjectsZoneProps> = ({ mode }) => {
   const innerWidth = useInnerWidth();
   const IS_MOBILE_DEVICE = innerWidth <= screens.mobile;
+  const isDark = mode.replaceAll(`"`, "") === "dark";
 
   const [isHidden, setIsHidden] = useState<boolean>(true);
   const [modalContent, setModalContent] = useState<any>({
@@ -86,6 +91,7 @@ const ProjectsZone: React.FC = () => {
       <TitleWithLines
         fontSize={IS_MOBILE_DEVICE ? "display0" : "title0"}
         fontWeight="medium"
+        color={isDark ? "white" : "black"}
         style={{
           marginBottom: IS_MOBILE_DEVICE ? spacing.three : spacing.four,
         }}
@@ -99,6 +105,7 @@ const ProjectsZone: React.FC = () => {
               key={index}
               name={project.name}
               imgUrl={project.images[0]}
+              mode={mode}
               onClick={() => {
                 setIsHidden(false);
                 setModalContent(

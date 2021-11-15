@@ -4,6 +4,7 @@ import { ThemeProvider } from "styled-components";
 
 import { theme } from "core/Theme";
 import { lessThan, useInnerWidth } from "utils";
+import { ThemeMode } from "global";
 
 import { Menu, Navbar } from "components/molecules";
 import {
@@ -29,6 +30,9 @@ const Portfolio: React.FC = () => {
   const IS_MOBILE_DEVICE = innerWidth <= screens.mobile;
 
   const [currentPage, setCurrentPage] = useState<number>(0);
+  const [themeMode, setThemeMode] = useState<string>(
+    localStorage.getItem("theme") || "dark"
+  );
 
   const MENU_ITEMS = [
     { iconName: "fas fa-info", title: "Informations" },
@@ -37,31 +41,32 @@ const Portfolio: React.FC = () => {
     { iconName: "fas fa-comment", title: "Contact" },
   ];
 
-  const displayZone = (page: number) => {
+  const displayZone = (page: number, mode: ThemeMode) => {
     switch (page) {
       case 1:
-        return <SkillsZone />;
+        return <SkillsZone mode={mode} />;
       case 2:
-        return <ProjectsZone />;
+        return <ProjectsZone mode={mode} />;
       case 3:
-        return <ContactZone />;
+        return <ContactZone mode={mode} />;
       default:
-        return <InfosZone />;
+        return <InfosZone mode={mode} />;
     }
   };
 
   return (
     <ThemeProvider theme={theme}>
-      <Navbar />
+      <Navbar onThemeChange={(mode) => setThemeMode(mode)} />
       <Layout>
         <Menu
           list={MENU_ITEMS}
+          mode={themeMode}
           onClick={(index) => setCurrentPage(index)}
           style={{
             marginBottom: IS_MOBILE_DEVICE ? spacing.four : spacing.five,
           }}
         />
-        {displayZone(currentPage)}
+        {displayZone(currentPage, themeMode as ThemeMode)}
       </Layout>
     </ThemeProvider>
   );

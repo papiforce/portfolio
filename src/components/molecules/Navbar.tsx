@@ -2,11 +2,15 @@ import { useState, useEffect } from "react";
 import styled from "styled-components";
 
 import { theme } from "core/Theme";
-import { lessThan, useInnerWidth } from "utils";
+import { lessThan, useInnerWidth, useLocalStorage } from "utils";
 
 import { Avatar, Text } from "components/atoms";
 
-const { screens } = theme;
+interface NavbarProps {
+  onThemeChange?: (theme: "dark" | "light") => void;
+}
+
+const { colors, screens } = theme;
 
 const Container = styled.div`
   ${({ theme: { spacing } }) => `
@@ -52,8 +56,11 @@ const SubRightSide = styled.div`
   align-items: center;
 `;
 
-const Navbar: React.FC = () => {
+const Navbar: React.FC<NavbarProps> = ({ onThemeChange }) => {
   const innerWidth = useInnerWidth();
+
+  const [mode, setMode] = useLocalStorage("theme", "dark");
+  const isDark = mode === "dark";
 
   const IS_MOBILE_DEVICE = innerWidth <= screens.mobile;
 
@@ -76,18 +83,44 @@ const Navbar: React.FC = () => {
     return () => clearInterval(timer);
   }, []);
 
+  useEffect(() => {
+    if (isDark) {
+      document.body.classList.remove("light-theme");
+      document.body.classList.add("dark-theme");
+    } else {
+      document.body.classList.remove("dark-theme");
+      document.body.classList.add("light-theme");
+    }
+  });
+
   return (
     <Container>
       <Text
         fontSize={IS_MOBILE_DEVICE ? "display5" : "display0"}
         fontWeight="extraBold"
+        color={isDark ? "white" : "black"}
       >
         Portfolio | EK
       </Text>
       <RightSide>
         <SubRightSide>
-          <IconWrapper>
-            <i className="fas fa-cog"></i>
+          <IconWrapper
+            onClick={() => {
+              setMode(isDark ? "light" : "dark");
+              if (isDark) {
+                document.body.classList.remove("dark-theme");
+                document.body.classList.add("light-theme");
+              } else {
+                document.body.classList.remove("light-theme");
+                document.body.classList.add("dark-theme");
+              }
+              if (onThemeChange) {
+                onThemeChange(isDark ? "light" : "dark");
+              }
+            }}
+            style={{ color: isDark ? colors.white : colors.black }}
+          >
+            <i className="fas fa-lightbulb" />
           </IconWrapper>
           <Avatar />
         </SubRightSide>
@@ -95,6 +128,7 @@ const Navbar: React.FC = () => {
           <Text
             fontSize="display0"
             fontWeight="light"
+            color={isDark ? "white" : "black"}
             style={{ letterSpacing: "5px" }}
           >
             {currentTime}

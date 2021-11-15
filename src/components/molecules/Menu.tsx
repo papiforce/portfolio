@@ -12,6 +12,7 @@ interface ListProps {
 
 interface MenuProps {
   list: ListProps[];
+  mode: string;
   onClick?: (index: number) => void;
   style?: React.CSSProperties;
 }
@@ -27,7 +28,7 @@ const Container = styled.div`
   height: 150px;
 `;
 
-const Menu: React.FC<MenuProps> = ({ list, onClick, style }) => {
+const Menu: React.FC<MenuProps> = ({ list, mode, onClick, style }) => {
   const [isActive, setIsActive] = useState<number>(0);
 
   return (
@@ -39,6 +40,7 @@ const Menu: React.FC<MenuProps> = ({ list, onClick, style }) => {
             isActive={isActive === index}
             iconName={elem.iconName}
             title={elem.title}
+            mode={mode}
             isLast={index === list.length - 1}
             onClick={() => {
               setIsActive(index);

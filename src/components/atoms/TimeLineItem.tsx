@@ -11,6 +11,7 @@ interface TimeLineItemProps {
   subtitle: string;
   date: string;
   description?: string;
+  mode: string;
   style?: React.CSSProperties;
 }
 
@@ -28,12 +29,18 @@ const Container = styled.div`
   width: 100%;
 `;
 
-const IconWrapper = styled.span`
-  ${({ theme: { spacing, colors, borderRadius, fontSize } }) => `
+const IconWrapper = styled.span<{ mode: string }>`
+  ${({ theme: { spacing, colors, borderRadius, fontSize }, mode }) => `
     padding: 20px ${spacing.three};
     background: ${colors.blue};
-    border: 2px solid ${colors.white};
+    // border: 2px solid ${colors.white};
+    border: ${
+      mode.replaceAll(`"`, "") === "dark"
+        ? `2px solid ${colors.white}`
+        : `2px solid ${colors.black}`
+    };
     border-radius: ${borderRadius.big};
+    color: ${mode.replaceAll(`"`, "") === "dark" ? colors.white : colors.black};
     font-size: ${fontSize.display3};
     ${lessThan("mobile")(`
       padding: 12px ${spacing.two};
@@ -50,20 +57,23 @@ const TimeLineItem: React.FC<TimeLineItemProps> = ({
   subtitle,
   date,
   description,
+  mode,
   style,
 }) => {
   const innerWidth = useInnerWidth();
   const IS_MOBILE_DEVICE = innerWidth <= screens.mobile;
+  const isDark = mode.replaceAll(`"`, "") === "dark";
 
   return (
     <Container style={style}>
-      <IconWrapper>
+      <IconWrapper mode={mode}>
         <i className={iconName}></i>
       </IconWrapper>
       <ContentWrapper>
         <Text
           fontSize={IS_MOBILE_DEVICE ? "big" : "display5"}
           fontWeight="regular"
+          color={isDark ? "white" : "black"}
           style={{ marginBottom: spacing.one }}
         >
           {date}
@@ -87,7 +97,7 @@ const TimeLineItem: React.FC<TimeLineItemProps> = ({
         <Text
           fontSize={IS_MOBILE_DEVICE ? "large" : "big"}
           fontWeight="regular"
-          color="glassDisable"
+          color={isDark ? "glassDisable" : "black"}
           text={description}
           lineHeight="24px"
         />

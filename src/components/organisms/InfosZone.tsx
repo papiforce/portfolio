@@ -2,9 +2,14 @@ import styled from "styled-components";
 
 import { theme } from "core/Theme";
 import { lessThan, useInnerWidth } from "utils";
+import { ThemeMode } from "global";
 
 import { Text, TitleWithLines } from "components/atoms";
 import { TimeLine } from "components/molecules";
+
+interface InfosZoneProps {
+  mode: ThemeMode;
+}
 
 const { screens, spacing } = theme;
 
@@ -67,10 +72,11 @@ const RightSide = styled.div`
   margin-left: auto;
 `;
 
-const InfosZone: React.FC = () => {
+const InfosZone: React.FC<InfosZoneProps> = ({ mode }) => {
   const innerWidth = useInnerWidth();
   const IS_TABLET_DEVICE = innerWidth <= screens.tablet;
   const IS_MOBILE_DEVICE = innerWidth <= screens.mobile;
+  const isDark = mode.replaceAll(`"`, "") === "dark";
 
   const LEFT_INFOS = [
     "Emmanuel KASOMO",
@@ -143,6 +149,7 @@ const InfosZone: React.FC = () => {
       <TitleWithLines
         fontSize={IS_MOBILE_DEVICE ? "display0" : "title0"}
         fontWeight="medium"
+        color={isDark ? "white" : "black"}
         style={{
           marginBottom: IS_MOBILE_DEVICE ? spacing.three : spacing.four,
         }}
@@ -158,6 +165,7 @@ const InfosZone: React.FC = () => {
                   key={`leftText_${index}`}
                   fontSize={IS_MOBILE_DEVICE ? "display5" : "display2"}
                   fontWeight="medium"
+                  color={isDark ? "white" : "black"}
                   style={{ maxWidth: IS_TABLET_DEVICE ? "100%" : "550px" }}
                 >
                   {info}
@@ -172,6 +180,7 @@ const InfosZone: React.FC = () => {
                   key={`rightText_${index}`}
                   fontSize={IS_MOBILE_DEVICE ? "display5" : "display2"}
                   fontWeight="medium"
+                  color={isDark ? "white" : "black"}
                   textAlign={IS_TABLET_DEVICE ? "text" : "right"}
                   style={{ maxWidth: "550px" }}
                 >
@@ -181,7 +190,7 @@ const InfosZone: React.FC = () => {
             })}
           </RightSide>
         </SidesWrapper>
-        <TimeLine list={TIMELINE_ITEMS} />
+        <TimeLine list={TIMELINE_ITEMS} mode={mode} />
       </Wrapper>
     </Container>
   );

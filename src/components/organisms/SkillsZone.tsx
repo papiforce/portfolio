@@ -6,6 +6,10 @@ import { lessThan, useInnerWidth } from "utils";
 import { TitleWithLines, Text } from "components/atoms";
 import { SkillElem } from "components/molecules";
 
+interface SkillsZoneProps {
+  mode: string;
+}
+
 const { screens, spacing } = theme;
 
 const Container = styled.div`
@@ -42,9 +46,11 @@ const SkillsWrapper = styled.div`
   justify-content: space-around;
 `;
 
-const LogoWrapper = styled.div`
-  ${({ theme: { borderRadius, colors, spacing } }) => `
-    background: ${colors.white};
+const LogoWrapper = styled.div<{ mode: string }>`
+  ${({ theme: { borderRadius, colors, spacing }, mode }) => `
+    background: ${
+      mode.replaceAll(`"`, "") === "dark" ? colors.white : colors.black
+    };
     border-radius: ${borderRadius.fullCircle};
     border: 2px solid ${colors.blue};
     margin: 0 auto ${spacing.two};
@@ -61,9 +67,10 @@ const LanguageLogo = styled.img`
   max-height: 100px;
 `;
 
-const SkillsZone: React.FC = () => {
+const SkillsZone: React.FC<SkillsZoneProps> = ({ mode }) => {
   const innerWidth = useInnerWidth();
   const IS_MOBILE_DEVICE = innerWidth <= screens.mobile;
+  const isDark = mode.replaceAll(`"`, "") === "dark";
 
   const SKILLS = [
     {
@@ -148,6 +155,7 @@ const SkillsZone: React.FC = () => {
       <TitleWithLines
         fontSize={IS_MOBILE_DEVICE ? "display0" : "title0"}
         fontWeight="medium"
+        color={isDark ? "white" : "black"}
         style={{
           marginBottom: IS_MOBILE_DEVICE ? spacing.three : spacing.four,
         }}
@@ -163,6 +171,7 @@ const SkillsZone: React.FC = () => {
                 iconName={skill.iconName}
                 label={skill.label}
                 description={skill.description}
+                mode={mode}
               />
             );
           })}
@@ -171,6 +180,7 @@ const SkillsZone: React.FC = () => {
           fontSize="display3"
           fontWeight="regular"
           textAlign="center"
+          color={isDark ? "white" : "black"}
           style={{
             fontStyle: "italic",
             margin: `0 auto ${spacing.ten}`,
@@ -182,13 +192,13 @@ const SkillsZone: React.FC = () => {
         <SkillsWrapper style={{ marginBottom: 0 }}>
           {LANGUAGES.map((language, index) => {
             return (
-              <LogoWrapper key={`language_${index}`}>
+              <LogoWrapper key={`language_${index}`} mode={mode}>
                 <div>
                   <LanguageLogo src={language.imgUrl} alt={language.label} />
                   <Text
                     fontSize="display4"
                     fontWeight="semiBold"
-                    color="black"
+                    color={isDark ? "black" : "white"}
                     textAlign="center"
                     style={{ marginTop: spacing.one }}
                   >
