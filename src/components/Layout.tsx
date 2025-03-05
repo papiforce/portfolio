@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet-async";
+import { Analytics } from "@vercel/analytics/react";
 
 import { media } from "../utils/mediaQueries";
 import Theme from "../utils/Theme";
@@ -87,6 +88,8 @@ const Layout = ({ children, metadata = {} }: LayoutType) => {
       <Navbar />
       <Container>{children}</Container>
       <Footer />
+
+      <Analytics />
     </>
   );
 };
