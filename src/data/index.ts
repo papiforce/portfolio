@@ -42,7 +42,7 @@ export const SETTINGS_DATA: SettingsType = {
 export const PROJECTS_DATA: ProjectType[] = [
   {
     date: "2025-03-03",
-    type: "PROJET",
+    type: "PERSO",
     slug: "portfolio",
     title: "Portfolio",
     description: `Ce projet est mon portfolio personnel, conçu pour présenter mes compétences, mes réalisations et mon parcours en tant que développeur TypeScript. L'objectif était de créer une interface moderne, réactif et facile à naviguer, tout en mettant en avant mes projets et mon expertise technique.
@@ -66,10 +66,11 @@ export const PROJECTS_DATA: ProjectType[] = [
     cover: "assets/projects/portfolio/portfolio-cover.png",
     cardCover: "assets/projects/portfolio/portfolio-card.png",
     stack: ["Typescript", "React", "Styled Components"],
+    githubUrl: ["https://github.com/papiforce/portfolio"],
   },
   {
     date: "2025-03-04",
-    type: "PROJET",
+    type: "PRO",
     slug: "iliad",
     title: "Iliad",
     description: `<b>Iliad</b> est une plateforme web regroupant <b>toutes les informations officielles</b>, <b>actualités</b> et <b>données légales</b> du groupe <b>Iliad</b> (<b>maison mère de Free</b>). Ce site joue un rôle clé dans la <b>communication institutionnelle</b> du groupe, en centralisant des contenus à destination des investisseurs, partenaires et du grand public.<br/><br/>
@@ -121,7 +122,7 @@ Iliad est un projet clé pour la communication du groupe Free. Travailler sur ce
   },
   {
     date: "2025-03-04",
-    type: "PROJET",
+    type: "PRO",
     slug: "carom",
     title: "Carom",
     description: `<b>Carom</b> est une application mobile conçue pour <b>faciliter le networking</b> entre particuliers via leur compte LinkedIn. Elle permet à ses utilisateurs d’<b>organiser</b> et de <b>rejoindre des activités</b>, favorisant ainsi les <b>rencontres</b> et les <b>échanges professionnels</b> dans un cadre convivial.<br/>
@@ -164,7 +165,7 @@ Carom se distingue par son approche originale du networking, <b>mêlant digital 
   },
   {
     date: "2025-03-04",
-    type: "PROJET",
+    type: "PRO",
     slug: "sesamers",
     title: "Sesamers",
     description: `<b>Sesamers</b> est une plateforme web conçue pour les <b>passionnés de la Tech</b>, leur offrant un espace où ils peuvent <b>élargir leur réseau</b>, <b>assister à des conférences</b>, <b>organiser des événements</b>, <b>écouter des podcasts</b> et <b>découvrir des opportunités d’emploi</b>.<br/>
@@ -207,7 +208,7 @@ Sesamers est un outil complet qui connecte les acteurs de la Tech à travers le 
   },
   {
     date: "2025-03-04",
-    type: "PROJET",
+    type: "PRO",
     slug: "cockpit",
     title: "Cockpit",
     description: `Ce projet a été développé dans le cadre de mon travail chez <b>Fleet</b>, où j’ai contribué à la conception et au développement de <b>Cockpit</b>, une plateforme permettant aux entreprises de <b>gérer leur flotte informatique</b> de manière centralisée. L’objectif était d’optimiser les coûts et d’améliorer le suivi des équipements mis à disposition des employés.
@@ -251,8 +252,8 @@ Cockpit est un <b>outil métier puissant</b>, conçu pour <b>faciliter la gestio
     websiteUrl: "https://fleet.co/",
   },
   //   {
-  //     date: "2025-03-05",
-  //     type: "PROJET",
+  //     date: "2025-03-06",
+  //     type: "PRO",
   //     slug: "mail-builder",
   //     title: "Mail Builder",
   //     description: `<b>Iliad</b> est une plateforme web regroupant <b>toutes les informations officielles</b>, <b>actualités</b> et <b>données légales</b> du groupe <b>Iliad</b> (<b>maison mère de Free</b>). Ce site joue un rôle clé dans la <b>communication institutionnelle</b> du groupe, en centralisant des contenus à destination des investisseurs, partenaires et du grand public.<br/><br/>
@@ -296,7 +297,7 @@ Cockpit est un <b>outil métier puissant</b>, conçu pour <b>faciliter la gestio
   //   },
   {
     date: "2025-03-05",
-    type: "PROJET",
+    type: "PRO",
     slug: "etre-free",
     title: "Être Free",
     description: `<b>Être Free</b> est le site marque employeur de Free, conçu pour <b>mettre en avant l’entreprise</b>, <b>ses différentes entités</b>, <b>ses métiers</b> et <b>ses offres d’emploi</b>. L’objectif principal était de r<b>enforcer l’image de marque de Free en tant qu’employeur attractif</b>, notamment auprès des jeunes talents.<br/><br/>
@@ -360,7 +361,7 @@ Ce projet m’a permis d’approfondir plusieurs compétences techniques et orga
   },
   {
     date: "2025-03-05",
-    type: "PROJET",
+    type: "PRO",
     slug: "lab-42",
     title: "Lab 42",
     description: `<b>Lab 42</b> est un site web conçu pour <b>faciliter le recrutement et la gestion des étudiants de l’école 42 souhaitant rejoindre Free en alternance</b>. Ce projet centralise toutes les informations essentielles sur le <b>Lab 42</b>, un pôle dédié à l’accompagnement des étudiants au sein de l’entreprise.<br/><br/>
@@ -419,7 +420,7 @@ Lab 42 est une <b>plateforme clé pour attirer et gérer les étudiants de l’�
   },
   {
     date: "2025-03-05",
-    type: "PROJET",
+    type: "PRO",
     slug: "daili",
     title: "Daili",
     description: `<b>Daili</b> est une plateforme interne centralisant <b>les outils et informations essentielles pour les employés de Free et des autres entreprises du groupe Iliad</b>. Elle offre un accès personnalisé selon l’entité à laquelle appartient l’utilisateur, garantissant une expérience adaptée aux besoins de chacun. <b>La plateforme est accessible à l’ensemble du groupe Iliad, y compris en Italie et en Pologne</b>.<br/><br/>

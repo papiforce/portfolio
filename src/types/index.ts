@@ -66,7 +66,7 @@ export type SettingsType = {
 
 export type ProjectType = {
   date: string;
-  type: "PROJET";
+  type: "PRO" | "PERSO";
   slug: string;
   title: string;
   description: string;
@@ -74,6 +74,6 @@ export type ProjectType = {
   cardCover: string;
   images?: string[];
   stack?: string[];
-  githubUrl?: string;
+  githubUrl?: string[];
   websiteUrl?: string;
 };

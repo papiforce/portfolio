@@ -23,7 +23,7 @@ const BadgeWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin: 8px 0 24px;
+  margin: 8px 0 0;
   cursor: default;
 `;
 
@@ -88,7 +88,7 @@ const ProjectPage = () => {
           style={{ margin: "24px 0 0" }}
         />
 
-        <Text fontSize="font12" color="grey" style={{ marginBottom: 24 }}>
+        <Text fontSize="font12" color="grey" style={{ marginBottom: 4 }}>
           Publié le{" "}
           {new Date(data?.date ?? "").toLocaleDateString("fr-FR", {
             year: "numeric",
@@ -96,6 +96,19 @@ const ProjectPage = () => {
             day: "numeric",
           })}
         </Text>
+
+        {data && data.type && (
+          <Text
+            fontSize="font14"
+            color="black"
+            fontWeight={500}
+            style={{ marginBottom: 24 }}
+          >
+            {data.type === "PRO"
+              ? "Ce projet a été réalisé dans le cadre professionnel"
+              : "Ce projet a été réalisé dans le cadre personnel"}
+          </Text>
+        )}
 
         <Text
           as="h1"
@@ -113,11 +126,44 @@ const ProjectPage = () => {
             ))}
         </BadgeWrapper>
 
+        {data?.githubUrl && (
+          <Text
+            as="a"
+            href={data.githubUrl}
+            target="_blank"
+            rel="noreferrer"
+            fontSize="font16"
+            fontWeight={500}
+            color="white"
+            style={{
+              padding: "12px 24px",
+              background: colors.primary,
+              borderRadius: 8,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              gap: 8,
+              width: isMobile ? "100%" : "max-content",
+              margin: isMobile ? "32px 0" : "40px auto",
+            }}
+          >
+            <Image
+              src={`${process.env.PUBLIC_URL}/assets/icons/github-white.svg`}
+              alt=""
+              width={24}
+            />
+            Github
+          </Text>
+        )}
+
         <Text
           fontSize="font16"
           fontWeight={500}
           textAlign="justify"
           dangerouslySetInnerHTML={{ __html: data?.description }}
+          style={{
+            margin: data?.githubUrl ? 0 : isMobile ? "32px 0 0" : "40px 0 0",
+          }}
         />
 
         {data?.websiteUrl && (
