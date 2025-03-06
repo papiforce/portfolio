@@ -11,11 +11,26 @@ const Container = styled.div`
 `;
 
 const Breadcrumb = () => {
+  const capitalizeWords = (text: string): string => {
+    if (!text) return text;
+
+    const formattedText = text.replaceAll("-", " ");
+
+    return formattedText
+      .split(" ")
+      .map((word) => {
+        if (word.length === 0) return word;
+
+        return word.charAt(0).toUpperCase() + word.slice(1);
+      })
+      .join(" ");
+  };
+
   const slugs = window.location.href
     .split("/")
     .slice(3)
     .map((slug: string) => ({
-      label: slug.charAt(0).toUpperCase() + slug.slice(1),
+      label: capitalizeWords(slug.charAt(0).toUpperCase() + slug.slice(1)),
       slug: `/${slug}`,
     }));
 

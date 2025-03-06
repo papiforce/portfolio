@@ -251,56 +251,83 @@ Cockpit est un <b>outil métier puissant</b>, conçu pour <b>faciliter la gestio
     ],
     websiteUrl: "https://fleet.co/",
   },
-  //   {
-  //     date: "2025-03-06",
-  //     type: "PRO",
-  //     slug: "mail-builder",
-  //     title: "Mail Builder",
-  //     description: `<b>Iliad</b> est une plateforme web regroupant <b>toutes les informations officielles</b>, <b>actualités</b> et <b>données légales</b> du groupe <b>Iliad</b> (<b>maison mère de Free</b>). Ce site joue un rôle clé dans la <b>communication institutionnelle</b> du groupe, en centralisant des contenus à destination des investisseurs, partenaires et du grand public.<br/><br/>
+  {
+    date: "2025-03-06",
+    type: "PRO",
+    slug: "mail-builder",
+    title: "Mail Builder",
+    description: `<b>Mail Builder</b> est une plateforme développée pour le pôle marketing de Free afin de leur <b>permettre de concevoir et structurer leurs e-mails en toute autonomie</b>. Cet outil WYSIWYG repose sur une <b>bibliothèque de composants préconçus</b>, optimisés pour une compatibilité multi-plateformes (Outlook, Gmail, etc.).<br/><br/>
 
-  // <b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Mon rôle et contributions</b><br/><br/>
-  // J’ai travaillé sur ce projet en contribuant à deux aspects majeurs :<br/><br/>
+Le projet a pour but de <b>simplifier et accélérer la création des e-mails marketing</b>, en évitant de mobiliser les intégrateurs à chaque demande. Avec <b>Mail Builder</b>, l’équipe marketing peut :<br/><br/>
 
-  // <div class="blueQuote"><b>» La refonte graphique</b> du front-end, visant à moderniser l’interface utilisateur avec <b style="color: #4682B4">React</b> et <b style="color: #4682B4">Material-UI</b><br/><br/>
-  // <b>» La migration du back-end</b> de <b style="color: #4682B4">Strapi v4</b> à <b style="color: #4682B4">Strapi v5</b>, garantissant une meilleure <b>scalabilité</b> et <b>maintenabilité</b> de l’architecture existante</div><br/><br/>
+<div class="blueQuote"><b>» </b> Construire des e-mails facilement grâce à une <b>interface intuitive et des composants prédéfinis</b><br/><br/>
+<b>» </b>Insérer des <b>variables dynamiques</b> selon leurs besoins<br/><br/>
+<b>» Prévisualiser leurs e-mails</b> en les envoyant directement à eux-mêmes<br/><br/>
+<b>» Exporter leurs créations en PDF</b> pour validation ou archivage<br/><br/>
+<b>» Gérer les assets</b> (images, logos, etc.), bien que l’upload reste sous contrôle des intégrateurs et développeurs pour éviter les fichiers trop lourds<br/><br/>
+<b>» Envoyer les e-mails aux clients</b> via une API interne à Free</div><br/><br/>
 
-  // <b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Développement et stack technique</b><br/><br/>
-  // Pour mener à bien cette refonte, nous avons utilisé :<br/><br/>
+<b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Mon rôle et contributions</b><br/><br/>
+J’ai travaillé activement sur ce projet en contribuant à plusieurs aspects clés :<br/><br/>
+✅ <b>Développement full-stack</b>, avec Next.js (front) et Nest.js (back).<br/><br/>
+✅ <b>Conception et gestion de la base de données PostgreSQL</b>, en optimisant la structure pour stocker et gérer les e-mails créés.<br/><br/>
+✅ <b>Mise en place de l’éditeur WYSIWYG</b>, offrant une expérience fluide et accessible aux non-développeurs.<br/><br/>
+✅ <b>Intégration de la gestion des assets</b>, en assurant un équilibre entre flexibilité pour le marketing et contrôle technique pour les intégrateurs.<br/><br/>
+✅ <b>Implémentation de la prise en charge multilingue</b>, notamment pour le marché italien, en adaptant l’UX et les composants aux besoins locaux.<br/><br/>
+✅ <b>Développement et intégration de l’API interne</b>, permettant d’envoyer les e-mails aux clients de Free directement depuis Mail Builder.<br/><br/>
 
-  // <div class="blueQuote"><b>»</b> <b style="color: #4682B4">React</b> et <b style="color: #4682B4">Material-UI</b> pour concevoir une interface moderne et accessible<br/><br/>
-  // <b>»</b> <b style="color: #4682B4">Strapi</b> (migration v4 → v5) en tant que CMS headless pour une gestion optimisée des contenus<br/><br/>
-  // <b>»</b> <b style="color: #4682B4">PostgreSQL</b> pour assurer une base de données performante et structurée<br/><br/>
-  // <b>»</b> <b style="color: #4682B4">Docker</b> pour garantir un environnement de développement et de déploiement stable</div><br/><br/>
+<b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Développement et stack technique</b><br/><br/>
+Nous avons utilisé une stack moderne et robuste pour assurer une expérience utilisateur fluide et une scalabilité optimale :<br/><br/>
 
-  // <b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Défis et solutions techniques</b><br/><br/>
-  // Ce projet nécessitait une <b>amélioration significative de l’UX/UI</b> ainsi qu’une <b>mise à jour du backend</b> tout en conservant la <b>cohérence</b> et la <b>continuité des données</b>. Pour cela, j’ai travaillé sur :<br/><br/>
+<div class="blueQuote"><b>» </b><b style="color: #4682B4">Next.js</b> pour le front-end, garantissant rapidité et interactivité<br/><br/>
+<b>» </b><b style="color: #4682B4">Nest.js</b> pour le back-end, offrant une architecture modulaire et maintenable<br/><br/>
+<b>» </b><b style="color: #4682B4">PostgreSQL</b> pour gérer efficacement les e-mails et leurs composants<br/><br/>
+<b>» </b><b style="color: #4682B4">Tailwind CSS</b> pour un design épuré et une intégration rapide des styles<br/><br/>
+<b>» </b><b style="color: #4682B4">Docker</b> pour assurer une infrastructure stable et facilement déployable</div><br/><br/>
 
-  // 🎨 Une <b>refonte du design</b> avec Material-UI, offrant une interface plus fluide et ergonomique.<br/>
-  // 🔄 Une <b>migration de Strapi v4 à v5</b>, impliquant une mise à jour des modèles de données et des API.<br/>
-  // 📊 Une <b>optimisation des performances du back-end</b> pour améliorer la vitesse de chargement et la gestion des requêtes.<br/><br/>
+<b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Défis et solutions techniques</b><br/><br/>
+<div class="blueQuote">🚀 <b>Problème : Architecture complexe de la base de données</b><br/><br/>
 
-  // <b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Expérience acquise</b><br/><br/>
-  // Grâce à ce projet, j’ai pu approfondir mes compétences en :<br/><br/>
+<b>» </b>Stocker efficacement les e-mails et leurs composants tout en permettant leur modification et leur réutilisation<br/><br/>
+<b>» </b>Solution : mise en place d’<b>une structure relationnelle optimisée</b>, permettant une gestion modulaire des templates et des variables<br/><br/>
 
-  // <div class="redQuote"><b>»</b> <b>Modernisation</b> d’interfaces avec <b style="color: #880808">React</b> et <b style="color: #880808">Material-UI</b><br/><br/>
-  // <b>»</b> <b>Gestion</b> et <b>migration</b> de CMS headless avec <b style="color: #880808">Strapi</b><br/><br/>
-  // <b>»</b> <b>Optimisation</b> des bases de données <b style="color: #880808">PostgreSQL</b><br/><br/>
-  // <b>»</b> <b>Déploiement</b> d’applications avec <b style="color: #880808">Docker</b> pour assurer une architecture robuste et évolutive</div><br/><br/>
+🎨 <b>Problème : UX et accessibilité de l’éditeur</b><br/><br/>
 
-  // <b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Un projet structurant et stratégique</b><br/><br/>
-  // Iliad est un projet clé pour la communication du groupe Free. Travailler sur cette plateforme m’a permis de <b>participer à une refonte d’envergure</b>, en améliorant à la fois l’<b>expérience utilisateur</b> et la <b>scalabilité technique</b> du site.<br/><br/>
+<b>» </b>Assurer <b>une prise en main intuitive</b> pour une équipe non technique<br/><br/>
+<b>» </b>Solution : développement d’<b>un éditeur en drag-and-drop</b> avec prévisualisation instantanée et guide interactif<br/><br/>
 
-  // 🚀 Une mission enrichissante, mêlant refonte UI et migration back-end, au sein d’un grand groupe technologique !`,
-  //     cover: "assets/projects/mail-builder/mail-builder-cover.png",
-  //     cardCover: "assets/projects/mail-builder/mail-builder-card.png",
-  //     stack: ["Typescript", "Next", "Tailwind", "Nest", "PostgreSQL", "Docker"],
-  //   },
+🌍 <b>Problème : Adaptation pour le marché italien</b><br/><br/>
+
+<b>» </b>Prise en charge <b>des besoins spécifiques du pôle italien</b><br/><br/>
+<b>» </b>Solution : traduction du site et <b>ajout d’options spécifiques aux campagnes marketing locales</b><br/><br/>
+📧 <b>Problème : Compatibilité des e-mails sur différents providers</b><br/><br/>
+
+<b>» </b>S’assurer que les e-mails créés s’affichent correctement sur <b>Outlook, Gmail et autres clients mail</b><br/><br/>
+<b>» </b>Solution : validation des composants par les intégrateurs avec <b>des tests approfondis de compatibilité et responsivité</b></div><br/><br/>
+
+<b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Expérience acquise</b><br/><br/>
+Grâce à ce projet, j’ai renforcé mes compétences en :<br/><br/>
+
+<div class="redQuote"><b>» Développement full-stack</b> avec <b style="color: #880808">Next.js</b> et <b style="color: #880808">Nest.js</b>, pour une application performante et évolutive<br/><br/>
+<b>» Optimisation de l’expérience utilisateur</b> (<b style="color: #880808">UX/UI</b>) pour un éditeur no-code accessible au marketing<br/><br/>
+<b>» Gestion avancée des bases de données</b> avec <b style="color: #880808">PostgreSQL</b>, pour une structuration efficace des e-mails et de leurs composants<br/><br/>
+<b>» Mise en place d’une architecture modulaire</b>, facilitant l’ajout de nouveaux composants et fonctionnalités<br/><br/>
+<b>» Intégration et sécurisation d’une</b> <b style="color: #880808">API</b> <b>interne</b>, permettant l’envoi d’e-mails aux clients directement depuis Mail Builder</div><br/><br/>
+
+<b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Un outil clé pour l’automatisation du marketing chez Free</b><br/><br/>
+Mail Builder est devenu un <b>outil essentiel pour le pôle marketing de Free</b>, leur permettant de <b>gagner en autonomie et en rapidité</b> dans la conception de leurs e-mails. Ce projet a également permis <b>de libérer du temps pour les intégrateurs</b>, qui n’ont plus à coder manuellement chaque campagne.<br/><br/>
+
+🚀 Un projet challengeant mêlant UX, architecture back-end et compatibilité e-mail, avec un fort impact sur la productivité de l’équipe marketing !`,
+    cover: "assets/projects/mail-builder/mail-builder-cover.png",
+    cardCover: "assets/projects/mail-builder/mail-builder-card.png",
+    stack: ["Typescript", "Next", "Tailwind", "Nest", "PostgreSQL", "Docker"],
+  },
   {
     date: "2025-03-05",
     type: "PRO",
     slug: "etre-free",
     title: "Être Free",
-    description: `<b>Être Free</b> est le site marque employeur de Free, conçu pour <b>mettre en avant l’entreprise</b>, <b>ses différentes entités</b>, <b>ses métiers</b> et <b>ses offres d’emploi</b>. L’objectif principal était de r<b>enforcer l’image de marque de Free en tant qu’employeur attractif</b>, notamment auprès des jeunes talents.<br/><br/>
+    description: `<b>Être Free</b> est le site marque employeur de Free, conçu pour <b>mettre en avant l’entreprise</b>, <b>ses différentes entités</b>, <b>ses métiers</b> et <b>ses offres d’emploi</b>. L’objectif principal était de <b>renforcer l’image de marque de Free en tant qu’employeur attractif</b>, notamment auprès des jeunes talents.<br/><br/>
 
 Ce projet se distingue par son approche moderne et immersive, avec :<br/><br/>
 

@@ -61,7 +61,8 @@ const Hero = () => {
           <span style={{ fontWeight: 700 }}>4 ans</span> d'expérience en
           Javascript, Typescript, React et Node. Grâce à mon expérience au sein
           d'entreprises de diverses tailles, j'ai développé une grande capacité
-          d'adaptation et une aisance face à la nouveauté. J'aime le sport
+          d'adaptation et une aisance face à la nouveauté. Passionné par le
+          développement web, j'ai également d'autres passions comme le sport
           (football, athlétisme, musculation), les mangas et les jeux-vidéos.
         </Text>
 

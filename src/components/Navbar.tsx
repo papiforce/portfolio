@@ -9,13 +9,16 @@ import Text from "./Text";
 import Image from "./Image";
 
 const Container = styled.nav`
+  ${({ theme: { colors } }) => `
+    background: ${colors.white};
+  `}
+
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 10;
   box-shadow: 0px 2px 4px 0px rgba(185, 185, 185, 0.2);
-  backdrop-filter: blur(4px);
 `;
 
 const Wrapper = styled.div`
