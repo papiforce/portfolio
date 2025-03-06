@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import { media } from "../utils/mediaQueries";
 import Theme from "../utils/Theme";
+import useWindowSize from "../utils/useWindowSize";
 
 import Text from "./Text";
 import Image from "./Image";
@@ -56,6 +57,10 @@ const SocialsWrapper = styled.div`
 `;
 
 const Footer: FC = () => {
+  const { width } = useWindowSize();
+  const { screens } = Theme;
+  const isMobile = width <= screens.mobile;
+
   const SOCIALS: SocialType[] = [
     {
       src: "assets/icons/resume.svg",
@@ -85,6 +90,7 @@ const Footer: FC = () => {
           fontSize="font16"
           fontWeight={500}
           color="grey"
+          textAlign={isMobile ? "center" : "left"}
         >
           © {new Date().getFullYear()} Emmanuel Kasomo. Tous droits réservés.
         </Text>
