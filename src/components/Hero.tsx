@@ -57,7 +57,7 @@ const Hero = () => {
         </Text>
 
         <Text fontSize="font16" textAlign={isTablet ? "justify" : "left"}>
-          Développeur junior avec plus de{" "}
+          Développeur avec plus de{" "}
           <span style={{ fontWeight: 700 }}>4 ans</span> d'expérience en
           Javascript, Typescript, React et Node. Grâce à mon expérience au sein
           d'entreprises de diverses tailles, j'ai développé une grande capacité
