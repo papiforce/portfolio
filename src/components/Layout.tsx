@@ -46,13 +46,13 @@ const Container = styled.main`
 const Layout = ({ children, metadata = {} }: LayoutType) => {
   const {
     title = "Emmanuel Kasomo | Portfolio",
-    description = "Portfolio de développeur spécialisé en React et TypeScript",
-    keywords = "react, next, typescript, développeur, frontend, backend, portfolio",
-    ogImage = "/images/og-image.jpg",
-    ogTitle,
-    ogDescription,
-    ogUrl = "https://votre-portfolio.com",
-    twitterCard = "summary_large_image",
+    description = "Portfolio de développeur spécialisé en Typescript et React (Next)",
+    keywords = "portfolio, développeur, frontend, backend, fullstack, javascript, typescript, styled components, tailwind, react, react native, next, vue, node, express, strapi, nest, php, symfony, python, flask, fastapi, mysql, postgresql, mongodb, docker, figma",
+    ogImage = "/assets/projects/portfolio/portfolio-cover.png",
+    ogTitle = "Emmanuel Kasomo | Portfolio",
+    ogDescription = "Portfolio de développeur spécialisé en Typescript et React (Next)",
+    ogUrl = "https://emmanuel-kasomo.vercel.app/",
+    twitterCard = "/assets/projects/portfolio/portfolio-cover.png",
     canonicalUrl,
     themeColor = "#4682B4",
   } = metadata;

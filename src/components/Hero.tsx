@@ -52,7 +52,8 @@ const Hero = () => {
       <ContentWrapper>
         <Text fontFamily="Space Grotesk" fontSize="from34to24" fontWeight={500}>
           {greeting()} ! 👋 <br /> Je suis{" "}
-          <b style={{ color: colors.primary }}>Emmanuel</b>, Développeur <br />
+          <b style={{ color: colors.primaryDark }}>Emmanuel</b>, Développeur{" "}
+          <br />
           Typescript vivant à Paris.
         </Text>
 

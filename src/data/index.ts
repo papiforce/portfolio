@@ -565,5 +565,6 @@ Portail Free est un élément clé de l’écosystème digital de Free, offrant 
     cover: "assets/projects/portail-free/portail-free-cover.png",
     cardCover: "assets/projects/portail-free/portail-free-card.png",
     stack: ["Typescript", "Next", "Tailwind", "Strapi", "PostgreSQL", "Docker"],
+    websiteUrl: "https://portail.free.fr/",
   },
 ];
