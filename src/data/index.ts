@@ -47,7 +47,7 @@ export const PROJECTS_DATA: ProjectType[] = [
     title: "Portfolio",
     description: `Ce projet est mon portfolio personnel, conçu pour présenter mes compétences, mes réalisations et mon parcours en tant que développeur TypeScript. L'objectif était de créer une interface moderne, réactif et facile à naviguer, tout en mettant en avant mes projets et mon expertise technique.
 
-      <br/><br/>J'ai utilisé <b style="color: #4682B4">TypeScript</b> pour garantir un code robuste et maintenable, en tirant parti de son système de typage statique. <b style="color: #4682B4">React</b> a été choisi pour sa flexibilité et sa performance, permettant de construire une application web dynamique et modulaire. Enfin, <b style="color: #4682B4">Styled Components</b> a été utilisé pour la gestion des styles, offrant une intégration fluide entre le CSS et le JavaScript, tout en permettant une personnalisation approfondie de l'interface.
+      <br/><br/>J'ai utilisé <b style="color: #3b6f9a">TypeScript</b> pour garantir un code robuste et maintenable, en tirant parti de son système de typage statique. <b style="color: #3b6f9a">React</b> a été choisi pour sa flexibilité et sa performance, permettant de construire une application web dynamique et modulaire. Enfin, <b style="color: #3b6f9a">Styled Components</b> a été utilisé pour la gestion des styles, offrant une intégration fluide entre le CSS et le JavaScript, tout en permettant une personnalisation approfondie de l'interface.
 
       Ce portfolio est conçu pour être évolutif, facilement modifiable et adapté à tous les appareils. Il reflète mon approche du développement : propre, structuré et axé sur l'expérience utilisateur.
 
@@ -78,16 +78,16 @@ export const PROJECTS_DATA: ProjectType[] = [
 <b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Mon rôle et contributions</b><br/><br/>
 J’ai travaillé sur ce projet en contribuant à deux aspects majeurs :<br/><br/>
 
-<div class="blueQuote"><b>» La refonte graphique</b> du front-end, visant à moderniser l’interface utilisateur avec <b style="color: #4682B4">React</b> et <b style="color: #4682B4">Material-UI</b><br/><br/>
-<b>» La migration du back-end</b> de <b style="color: #4682B4">Strapi v4</b> à <b style="color: #4682B4">Strapi v5</b>, garantissant une meilleure <b>scalabilité</b> et <b>maintenabilité</b> de l’architecture existante</div><br/><br/>
+<div class="blueQuote"><b>» La refonte graphique</b> du front-end, visant à moderniser l’interface utilisateur avec <b style="color: #3b6f9a">React</b> et <b style="color: #3b6f9a">Material-UI</b><br/><br/>
+<b>» La migration du back-end</b> de <b style="color: #3b6f9a">Strapi v4</b> à <b style="color: #3b6f9a">Strapi v5</b>, garantissant une meilleure <b>scalabilité</b> et <b>maintenabilité</b> de l’architecture existante</div><br/><br/>
 
 <b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Développement et stack technique</b><br/><br/>
 Pour mener à bien cette refonte, nous avons utilisé :<br/><br/>
 
-<div class="blueQuote"><b>»</b> <b style="color: #4682B4">React</b> et <b style="color: #4682B4">Material-UI</b> pour concevoir une interface moderne et accessible<br/><br/>
-<b>»</b> <b style="color: #4682B4">Strapi</b> (migration v4 → v5) en tant que CMS headless pour une gestion optimisée des contenus<br/><br/>
-<b>»</b> <b style="color: #4682B4">PostgreSQL</b> pour assurer une base de données performante et structurée<br/><br/>
-<b>»</b> <b style="color: #4682B4">Docker</b> pour garantir un environnement de développement et de déploiement stable</div><br/><br/>
+<div class="blueQuote"><b>»</b> <b style="color: #3b6f9a">React</b> et <b style="color: #3b6f9a">Material-UI</b> pour concevoir une interface moderne et accessible<br/><br/>
+<b>»</b> <b style="color: #3b6f9a">Strapi</b> (migration v4 → v5) en tant que CMS headless pour une gestion optimisée des contenus<br/><br/>
+<b>»</b> <b style="color: #3b6f9a">PostgreSQL</b> pour assurer une base de données performante et structurée<br/><br/>
+<b>»</b> <b style="color: #3b6f9a">Docker</b> pour garantir un environnement de développement et de déploiement stable</div><br/><br/>
 
 <b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Défis et solutions techniques</b><br/><br/>
 Ce projet nécessitait une <b>amélioration significative de l’UX/UI</b> ainsi qu’une <b>mise à jour du backend</b> tout en conservant la <b>cohérence</b> et la <b>continuité des données</b>. Pour cela, j’ai travaillé sur :<br/><br/>
@@ -132,10 +132,10 @@ Mon rôle dans ce projet a été de <b>développer</b> et <b>optimiser</b> l’a
 <b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Développement et stack technique</b><br/><br/>
 Pour construire cette application, nous avons utilisé :<br/><br/>
 
-<div class="blueQuote"><b>»</b> <b style="color: #4682B4">React Native</b> et <b style="color: #4682B4">Tailwind CSS</b> pour créer une interface mobile performante et agréable à utiliser<br/><br/>
-<b>»</b> <b style="color: #4682B4">Strapi</b> en tant que CMS headless, facilitant la gestion des utilisateurs et des activités<br/><br/>
-<b>»</b> <b style="color: #4682B4">PostgreSQL</b> pour stocker et gérer les données de manière efficace<br/><br/>
-<b>»</b> <b style="color: #4682B4">Docker</b> pour assurer un déploiement stable et scalable</div><br/><br/>
+<div class="blueQuote"><b>»</b> <b style="color: #3b6f9a">React Native</b> et <b style="color: #3b6f9a">Tailwind CSS</b> pour créer une interface mobile performante et agréable à utiliser<br/><br/>
+<b>»</b> <b style="color: #3b6f9a">Strapi</b> en tant que CMS headless, facilitant la gestion des utilisateurs et des activités<br/><br/>
+<b>»</b> <b style="color: #3b6f9a">PostgreSQL</b> pour stocker et gérer les données de manière efficace<br/><br/>
+<b>»</b> <b style="color: #3b6f9a">Docker</b> pour assurer un déploiement stable et scalable</div><br/><br/>
 
 <b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Défis et solutions techniques</b><br/><br/>
 L’un des principaux défis du projet était de garantir un processus d’inscription sécurisé et exclusif grâce à un <b>système de validation par recommandation</b>. Pour cela, j’ai contribué à la mise en place de :<br/><br/>
@@ -175,11 +175,11 @@ Mon rôle dans ce projet a été de <b>développer des fonctionnalités essentie
 <b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Développement et stack technique</b><br/><br/>
 Pour construire cette plateforme, nous avons utilisé :<br/><br/>
 
-<div class="blueQuote"><b>» </b><b style="color: #4682B4">Vue.js</b> et <b style="color: #4682B4">Tailwind CSS</b> pour concevoir une interface moderne, réactive et accessible<br/><br/>
-<b>» </b><b style="color: #4682B4">TypeScript</b> pour assurer une base de code robuste et maintenable
-<b>» </b><b style="color: #4682B4">Strapi</b> en tant que CMS headless, facilitant la gestion des contenus<br/><br/>
-<b>» </b><b style="color: #4682B4">PostgreSQL</b> pour stocker et organiser efficacement les donnée.<br/><br/>
-<b>» </b><b style="color: #4682B4">Docker</b> pour simplifier le déploiement et assurer la scalabilité du projet</div><br/><br/>
+<div class="blueQuote"><b>» </b><b style="color: #3b6f9a">Vue.js</b> et <b style="color: #3b6f9a">Tailwind CSS</b> pour concevoir une interface moderne, réactive et accessible<br/><br/>
+<b>» </b><b style="color: #3b6f9a">TypeScript</b> pour assurer une base de code robuste et maintenable
+<b>» </b><b style="color: #3b6f9a">Strapi</b> en tant que CMS headless, facilitant la gestion des contenus<br/><br/>
+<b>» </b><b style="color: #3b6f9a">PostgreSQL</b> pour stocker et organiser efficacement les donnée.<br/><br/>
+<b>» </b><b style="color: #3b6f9a">Docker</b> pour simplifier le déploiement et assurer la scalabilité du projet</div><br/><br/>
 
 <b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Défis et solutions techniques</b><br/><br/>
 Ce projet nécessitait une interface fluide et performante, capable de gérer une grande quantité de contenus et d’interactions en temps réel. Pour répondre à ces exigences, j’ai travaillé sur :<br/><br/>
@@ -215,10 +215,10 @@ Sesamers est un outil complet qui connecte les acteurs de la Tech à travers le 
 
 J’ai travaillé sur ce projet en tant que <b>développeur full-stack</b>, en utilisant une stack moderne et performante :<br/><br/>
 
-<div class="blueQuote"><b>» </b><b style="color: #4682B4">TypeScript</b> pour assurer un code robuste et maintenable grâce à son typage statique <br/><br/>
-<b>» </b><b style="color: #4682B4">React</b> et <b style="color: #4682B4">Styled Components</b> pour une interface utilisateur fluide, modulaire et réactive <br/><br/>
-<b>» </b><b style="color: #4682B4">Node.js</b> et <b style="color: #4682B4">Express</b> pour construire une API scalable et performante.<br/><br/>
-<b>» </b><b style="color: #4682B4">MongoDB</b> pour la gestion et le stockage des données.</div><br/><br/>
+<div class="blueQuote"><b>» </b><b style="color: #3b6f9a">TypeScript</b> pour assurer un code robuste et maintenable grâce à son typage statique <br/><br/>
+<b>» </b><b style="color: #3b6f9a">React</b> et <b style="color: #3b6f9a">Styled Components</b> pour une interface utilisateur fluide, modulaire et réactive <br/><br/>
+<b>» </b><b style="color: #3b6f9a">Node.js</b> et <b style="color: #3b6f9a">Express</b> pour construire une API scalable et performante.<br/><br/>
+<b>» </b><b style="color: #3b6f9a">MongoDB</b> pour la gestion et le stockage des données.</div><br/><br/>
 
 <b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Défis et solutions techniques</b><br/><br/>
 L’un des principaux défis de ce projet était de créer une expérience utilisateur fluide malgré la complexité des données à gérer. Pour cela, j’ai mis en place :<br/><br/>
@@ -252,77 +252,6 @@ Cockpit est un <b>outil métier puissant</b>, conçu pour <b>faciliter la gestio
     websiteUrl: "https://fleet.co/",
   },
   {
-    date: "2025-03-06",
-    type: "PRO",
-    slug: "mail-builder",
-    title: "Mail Builder",
-    description: `<b>Mail Builder</b> est une plateforme développée pour le pôle marketing de Free afin de leur <b>permettre de concevoir et structurer leurs e-mails en toute autonomie</b>. Cet outil WYSIWYG repose sur une <b>bibliothèque de composants préconçus</b>, optimisés pour une compatibilité multi-plateformes (Outlook, Gmail, etc.).<br/><br/>
-
-Le projet a pour but de <b>simplifier et accélérer la création des e-mails marketing</b>, en évitant de mobiliser les intégrateurs à chaque demande. Avec <b>Mail Builder</b>, l’équipe marketing peut :<br/><br/>
-
-<div class="blueQuote"><b>» </b> Construire des e-mails facilement grâce à une <b>interface intuitive et des composants prédéfinis</b><br/><br/>
-<b>» </b>Insérer des <b>variables dynamiques</b> selon leurs besoins<br/><br/>
-<b>» Prévisualiser leurs e-mails</b> en les envoyant directement à eux-mêmes<br/><br/>
-<b>» Exporter leurs créations en PDF</b> pour validation ou archivage<br/><br/>
-<b>» Gérer les assets</b> (images, logos, etc.), bien que l’upload reste sous contrôle des intégrateurs et développeurs pour éviter les fichiers trop lourds<br/><br/>
-<b>» Envoyer les e-mails aux clients</b> via une API interne à Free</div><br/><br/>
-
-<b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Mon rôle et contributions</b><br/><br/>
-J’ai travaillé activement sur ce projet en contribuant à plusieurs aspects clés :<br/><br/>
-✅ <b>Développement full-stack</b>, avec Next.js (front) et Nest.js (back).<br/><br/>
-✅ <b>Conception et gestion de la base de données PostgreSQL</b>, en optimisant la structure pour stocker et gérer les e-mails créés.<br/><br/>
-✅ <b>Mise en place de l’éditeur WYSIWYG</b>, offrant une expérience fluide et accessible aux non-développeurs.<br/><br/>
-✅ <b>Intégration de la gestion des assets</b>, en assurant un équilibre entre flexibilité pour le marketing et contrôle technique pour les intégrateurs.<br/><br/>
-✅ <b>Implémentation de la prise en charge multilingue</b>, notamment pour le marché italien, en adaptant l’UX et les composants aux besoins locaux.<br/><br/>
-✅ <b>Développement et intégration de l’API interne</b>, permettant d’envoyer les e-mails aux clients de Free directement depuis Mail Builder.<br/><br/>
-
-<b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Développement et stack technique</b><br/><br/>
-Nous avons utilisé une stack moderne et robuste pour assurer une expérience utilisateur fluide et une scalabilité optimale :<br/><br/>
-
-<div class="blueQuote"><b>» </b><b style="color: #4682B4">Next.js</b> pour le front-end, garantissant rapidité et interactivité<br/><br/>
-<b>» </b><b style="color: #4682B4">Nest.js</b> pour le back-end, offrant une architecture modulaire et maintenable<br/><br/>
-<b>» </b><b style="color: #4682B4">PostgreSQL</b> pour gérer efficacement les e-mails et leurs composants<br/><br/>
-<b>» </b><b style="color: #4682B4">Tailwind CSS</b> pour un design épuré et une intégration rapide des styles<br/><br/>
-<b>» </b><b style="color: #4682B4">Docker</b> pour assurer une infrastructure stable et facilement déployable</div><br/><br/>
-
-<b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Défis et solutions techniques</b><br/><br/>
-<div class="blueQuote">🚀 <b>Problème : Architecture complexe de la base de données</b><br/><br/>
-
-<b>» </b>Stocker efficacement les e-mails et leurs composants tout en permettant leur modification et leur réutilisation<br/><br/>
-<b>» </b>Solution : mise en place d’<b>une structure relationnelle optimisée</b>, permettant une gestion modulaire des templates et des variables<br/><br/>
-
-🎨 <b>Problème : UX et accessibilité de l’éditeur</b><br/><br/>
-
-<b>» </b>Assurer <b>une prise en main intuitive</b> pour une équipe non technique<br/><br/>
-<b>» </b>Solution : développement d’<b>un éditeur en drag-and-drop</b> avec prévisualisation instantanée et guide interactif<br/><br/>
-
-🌍 <b>Problème : Adaptation pour le marché italien</b><br/><br/>
-
-<b>» </b>Prise en charge <b>des besoins spécifiques du pôle italien</b><br/><br/>
-<b>» </b>Solution : traduction du site et <b>ajout d’options spécifiques aux campagnes marketing locales</b><br/><br/>
-📧 <b>Problème : Compatibilité des e-mails sur différents providers</b><br/><br/>
-
-<b>» </b>S’assurer que les e-mails créés s’affichent correctement sur <b>Outlook, Gmail et autres clients mail</b><br/><br/>
-<b>» </b>Solution : validation des composants par les intégrateurs avec <b>des tests approfondis de compatibilité et responsivité</b></div><br/><br/>
-
-<b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Expérience acquise</b><br/><br/>
-Grâce à ce projet, j’ai renforcé mes compétences en :<br/><br/>
-
-<div class="redQuote"><b>» Développement full-stack</b> avec <b style="color: #880808">Next.js</b> et <b style="color: #880808">Nest.js</b>, pour une application performante et évolutive<br/><br/>
-<b>» Optimisation de l’expérience utilisateur</b> (<b style="color: #880808">UX/UI</b>) pour un éditeur no-code accessible au marketing<br/><br/>
-<b>» Gestion avancée des bases de données</b> avec <b style="color: #880808">PostgreSQL</b>, pour une structuration efficace des e-mails et de leurs composants<br/><br/>
-<b>» Mise en place d’une architecture modulaire</b>, facilitant l’ajout de nouveaux composants et fonctionnalités<br/><br/>
-<b>» Intégration et sécurisation d’une</b> <b style="color: #880808">API</b> <b>interne</b>, permettant l’envoi d’e-mails aux clients directement depuis Mail Builder</div><br/><br/>
-
-<b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Un outil clé pour l’automatisation du marketing chez Free</b><br/><br/>
-Mail Builder est devenu un <b>outil essentiel pour le pôle marketing de Free</b>, leur permettant de <b>gagner en autonomie et en rapidité</b> dans la conception de leurs e-mails. Ce projet a également permis <b>de libérer du temps pour les intégrateurs</b>, qui n’ont plus à coder manuellement chaque campagne.<br/><br/>
-
-🚀 Un projet challengeant mêlant UX, architecture back-end et compatibilité e-mail, avec un fort impact sur la productivité de l’équipe marketing !`,
-    cover: "assets/projects/mail-builder/mail-builder-cover.png",
-    cardCover: "assets/projects/mail-builder/mail-builder-card.png",
-    stack: ["Typescript", "Next", "Tailwind", "Nest", "PostgreSQL", "Docker"],
-  },
-  {
     date: "2025-03-05",
     type: "PRO",
     slug: "etre-free",
@@ -346,12 +275,12 @@ J’ai participé activement au développement du site en travaillant sur plusie
 <b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Développement et stack technique</b><br/><br/>
 Pour assurer la réussite de ce projet, nous avons utilisé :<br/><br/>
 
-<div class="blueQuote"><b>»</b> <b style="color: #4682B4">Next.js</b> pour offrir une navigation rapide et fluide<br/><br/>
-<b>»</b> <b style="color: #4682B4">TypeScript</b> pour un code robuste et scalable<br/><br/>
-<b>»</b> <b style="color: #4682B4">Tailwind CSS</b> pour un design responsive et cohérent<br/><br/>
-<b>»</b> <b style="color: #4682B4">Strapi</b> pour gérer facilement le contenu éditorial<br/><br/>
-<b>»</b> <b style="color: #4682B4">PostgreSQL</b> pour structurer et stocker les données<br/><br/>
-<b>»</b> <b style="color: #4682B4">Docker</b> pour assurer une infrastructure stable et maintenable</div><br/><br/>
+<div class="blueQuote"><b>»</b> <b style="color: #3b6f9a">Next.js</b> pour offrir une navigation rapide et fluide<br/><br/>
+<b>»</b> <b style="color: #3b6f9a">TypeScript</b> pour un code robuste et scalable<br/><br/>
+<b>»</b> <b style="color: #3b6f9a">Tailwind CSS</b> pour un design responsive et cohérent<br/><br/>
+<b>»</b> <b style="color: #3b6f9a">Strapi</b> pour gérer facilement le contenu éditorial<br/><br/>
+<b>»</b> <b style="color: #3b6f9a">PostgreSQL</b> pour structurer et stocker les données<br/><br/>
+<b>»</b> <b style="color: #3b6f9a">Docker</b> pour assurer une infrastructure stable et maintenable</div><br/><br/>
 
 <b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Défis et solutions techniques</b><br/><br/>
 Le projet a rencontré plusieurs challenges majeurs :<br/><br/>
@@ -359,7 +288,7 @@ Le projet a rencontré plusieurs challenges majeurs :<br/><br/>
 <div class="blueQuote">🎨 <b>Contraintes et indécisions sur le design :</b><br/><br/>
 
 <b>»</b> Les différentes parties prenantes avaient du mal à statuer sur le design et les couleurs à adopter<br/><br/>
-<b>»</b> Solution : mise en place d’un <b>système modulaire</b> basé sur <b style="color: #4682B4">Tailwind CSS</b>, facilitant les ajustements rapides et la personnalisation<br/><br/>
+<b>»</b> Solution : mise en place d’un <b>système modulaire</b> basé sur <b style="color: #3b6f9a">Tailwind CSS</b>, facilitant les ajustements rapides et la personnalisation<br/><br/>
 📸 <b>Délai de livraison des assets graphiques :</b><br/><br/>
 
 <b>»</b> Le studio interne (pôle graphique de Free) avait du retard dans la livraison des visuels<br/><br/>
@@ -401,8 +330,8 @@ Le site permet aux étudiants de <b>postuler directement</b>, mais aussi d’acc
 
 <b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Mon rôle et contributions</b><br/><br/>
 J’ai activement contribué au développement du site Lab 42 en travaillant sur plusieurs aspects clés :<br/><br/>
-<div class="blueQuote">✅ <b>Développement front-end</b>, en concevant une interface moderne avec <b style="color: #4682B4">Next.js</b> et <b style="color: #4682B4">Tailwind CSS</b><br/><br/>
-✅ <b>Gestion des candidatures</b>, avec une intégration entre <b style="color: #4682B4">Strapi</b> et <b style="color: #4682B4">AWS</b> pour le <b>dépôt des CV</b><br/><br/>
+<div class="blueQuote">✅ <b>Développement front-end</b>, en concevant une interface moderne avec <b style="color: #3b6f9a">Next.js</b> et <b style="color: #3b6f9a">Tailwind CSS</b><br/><br/>
+✅ <b>Gestion des candidatures</b>, avec une intégration entre <b style="color: #3b6f9a">Strapi</b> et <b style="color: #3b6f9a">AWS</b> pour le <b>dépôt des CV</b><br/><br/>
 ✅ <b>Mise en place d’un back-office</b> permettant aux parties prenantes de :<br/><br/>
 
 <b>»</b> Consulter les <b>CV des candidats directement depuis Strapi</b><br/><br/>
@@ -412,13 +341,13 @@ J’ai activement contribué au développement du site Lab 42 en travaillant sur
 <b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Développement et stack technique</b><br/><br/>
 Pour mener à bien ces évolutions, nous avons utilisé :<br/><br/>
 
-<div class="blueQuote"><b>»</b> <b style="color: #4682B4">Next.js</b> pour bénéficier d’un rendu performant et d’un SEO optimisé<br/><br/>
-<b>»</b> <b style="color: #4682B4">TypeScript</b> pour assurer un code robuste et maintenable<br/><br/>
-<b>»</b> <b style="color: #4682B4">Tailwind CSS</b> pour une conception UI moderne et efficace<br/><br/>
-<b>»</b> <b style="color: #4682B4">Strapi</b> pour gérer les contenus et les candidatures<br/><br/>
-<b>»</b> <b style="color: #4682B4">PostgreSQL</b> pour structurer et optimiser la base de données<br/><br/>
-<b>»</b> <b style="color: #4682B4">AWS</b> pour le stockage et la gestion des CV des candidats<br/><br/>
-<b>»</b> <b style="color: #4682B4">Docker</b> pour assurer un déploiement stable et reproductible</div><br/><br/>
+<div class="blueQuote"><b>»</b> <b style="color: #3b6f9a">Next.js</b> pour bénéficier d’un rendu performant et d’un SEO optimisé<br/><br/>
+<b>»</b> <b style="color: #3b6f9a">TypeScript</b> pour assurer un code robuste et maintenable<br/><br/>
+<b>»</b> <b style="color: #3b6f9a">Tailwind CSS</b> pour une conception UI moderne et efficace<br/><br/>
+<b>»</b> <b style="color: #3b6f9a">Strapi</b> pour gérer les contenus et les candidatures<br/><br/>
+<b>»</b> <b style="color: #3b6f9a">PostgreSQL</b> pour structurer et optimiser la base de données<br/><br/>
+<b>»</b> <b style="color: #3b6f9a">AWS</b> pour le stockage et la gestion des CV des candidats<br/><br/>
+<b>»</b> <b style="color: #3b6f9a">Docker</b> pour assurer un déploiement stable et reproductible</div><br/><br/>
 
 <b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Défis et solutions techniques</b><br/><br/>
 Lab 42 est une plateforme ayant <b>plusieurs parties distinctes</b> et <b>plusieurs types d’utilisateurs</b>, ce qui nécessitait :<br/><br/>
@@ -472,11 +401,11 @@ J’ai travaillé sur <b>plusieurs aspects clés</b> du projet :<br/><br/>
 <b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Développement et stack technique</b><br/><br/>
 Pour mener à bien ces évolutions, nous avons utilisé :<br/><br/>
 
-<div class="blueQuote"><b>»</b> <b style="color: #4682B4">Next</b> et <b style="color: #4682B4">Tailwind CSS</b> pour concevoir une interface moderne et ergonomique<br/><br/>
-<b>»</b> <b style="color: #4682B4">TypeScript</b> pour assurer une base de code robuste et évolutive<br/><br/>
-<b>»</b> <b style="color: #4682B4">Strapi</b> (migration v4 → v5) pour une gestion flexible et contributive des contenus<br/><br/>
-<b>»</b> <b style="color: #4682B4">PostgreSQL</b> pour optimiser le stockage et l’organisation des données<br/><br/>
-<b>»</b> <b style="color: #4682B4">Docker</b> pour garantir une infrastructure stable et scalable</div><br/><br/>
+<div class="blueQuote"><b>»</b> <b style="color: #3b6f9a">Next</b> et <b style="color: #3b6f9a">Tailwind CSS</b> pour concevoir une interface moderne et ergonomique<br/><br/>
+<b>»</b> <b style="color: #3b6f9a">TypeScript</b> pour assurer une base de code robuste et évolutive<br/><br/>
+<b>»</b> <b style="color: #3b6f9a">Strapi</b> (migration v4 → v5) pour une gestion flexible et contributive des contenus<br/><br/>
+<b>»</b> <b style="color: #3b6f9a">PostgreSQL</b> pour optimiser le stockage et l’organisation des données<br/><br/>
+<b>»</b> <b style="color: #3b6f9a">Docker</b> pour garantir une infrastructure stable et scalable</div><br/><br/>
 
 <b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Défis et solutions techniques</b><br/><br/>
 Daili étant une plateforme ouverte à <b>plusieurs entités du groupe Iliad</b>, le défi majeur était d’assurer <b>une expérience utilisateur cohérente tout en affichant un contenu spécifique selon l’entreprise et le pays</b>. Pour répondre à cette exigence, j’ai travaillé sur :<br/><br/>
@@ -501,6 +430,140 @@ Daili est une <b>plateforme clé pour la communication interne</b> de Free et du
 🚀 Une mission enrichissante, mêlant innovation, personnalisation et collaboration à grande échelle !`,
     cover: "assets/projects/daili/daili-cover.png",
     cardCover: "assets/projects/daili/daili-card.png",
+    stack: ["Typescript", "Next", "Tailwind", "Strapi", "PostgreSQL", "Docker"],
+  },
+  {
+    date: "2025-03-06",
+    type: "PRO",
+    slug: "mail-builder",
+    title: "Mail Builder",
+    description: `<b>Mail Builder</b> est une plateforme développée pour le pôle marketing de Free afin de leur <b>permettre de concevoir et structurer leurs e-mails en toute autonomie</b>. Cet outil WYSIWYG repose sur une <b>bibliothèque de composants préconçus</b>, optimisés pour une compatibilité multi-plateformes (Outlook, Gmail, etc.).<br/><br/>
+
+Le projet a pour but de <b>simplifier et accélérer la création des e-mails marketing</b>, en évitant de mobiliser les intégrateurs à chaque demande. Avec <b>Mail Builder</b>, l’équipe marketing peut :<br/><br/>
+
+<div class="blueQuote"><b>» </b> Construire des e-mails facilement grâce à une <b>interface intuitive et des composants prédéfinis</b><br/><br/>
+<b>» </b>Insérer des <b>variables dynamiques</b> selon leurs besoins<br/><br/>
+<b>» Prévisualiser leurs e-mails</b> en les envoyant directement à eux-mêmes<br/><br/>
+<b>» Exporter leurs créations en PDF</b> pour validation ou archivage<br/><br/>
+<b>» Gérer les assets</b> (images, logos, etc.), bien que l’upload reste sous contrôle des intégrateurs et développeurs pour éviter les fichiers trop lourds<br/><br/>
+<b>» Envoyer les e-mails aux clients</b> via une API interne à Free</div><br/><br/>
+
+<b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Mon rôle et contributions</b><br/><br/>
+J’ai travaillé activement sur ce projet en contribuant à plusieurs aspects clés :<br/><br/>
+✅ <b>Développement full-stack</b>, avec Next.js (front) et Nest.js (back).<br/><br/>
+✅ <b>Conception et gestion de la base de données PostgreSQL</b>, en optimisant la structure pour stocker et gérer les e-mails créés.<br/><br/>
+✅ <b>Mise en place de l’éditeur WYSIWYG</b>, offrant une expérience fluide et accessible aux non-développeurs.<br/><br/>
+✅ <b>Intégration de la gestion des assets</b>, en assurant un équilibre entre flexibilité pour le marketing et contrôle technique pour les intégrateurs.<br/><br/>
+✅ <b>Implémentation de la prise en charge multilingue</b>, notamment pour le marché italien, en adaptant l’UX et les composants aux besoins locaux.<br/><br/>
+✅ <b>Développement et intégration de l’API interne</b>, permettant d’envoyer les e-mails aux clients de Free directement depuis Mail Builder.<br/><br/>
+
+<b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Développement et stack technique</b><br/><br/>
+Nous avons utilisé une stack moderne et robuste pour assurer une expérience utilisateur fluide et une scalabilité optimale :<br/><br/>
+
+<div class="blueQuote"><b>» </b><b style="color: #3b6f9a">Next.js</b> pour le front-end, garantissant rapidité et interactivité<br/><br/>
+<b>» </b><b style="color: #3b6f9a">Nest.js</b> pour le back-end, offrant une architecture modulaire et maintenable<br/><br/>
+<b>» </b><b style="color: #3b6f9a">PostgreSQL</b> pour gérer efficacement les e-mails et leurs composants<br/><br/>
+<b>» </b><b style="color: #3b6f9a">Tailwind CSS</b> pour un design épuré et une intégration rapide des styles<br/><br/>
+<b>» </b><b style="color: #3b6f9a">Docker</b> pour assurer une infrastructure stable et facilement déployable</div><br/><br/>
+
+<b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Défis et solutions techniques</b><br/><br/>
+<div class="blueQuote">🚀 <b>Problème : Architecture complexe de la base de données</b><br/><br/>
+
+<b>» </b>Stocker efficacement les e-mails et leurs composants tout en permettant leur modification et leur réutilisation<br/><br/>
+<b>» </b>Solution : mise en place d’<b>une structure relationnelle optimisée</b>, permettant une gestion modulaire des templates et des variables<br/><br/>
+
+🎨 <b>Problème : UX et accessibilité de l’éditeur</b><br/><br/>
+
+<b>» </b>Assurer <b>une prise en main intuitive</b> pour une équipe non technique<br/><br/>
+<b>» </b>Solution : développement d’<b>un éditeur en drag-and-drop</b> avec prévisualisation instantanée et guide interactif<br/><br/>
+
+🌍 <b>Problème : Adaptation pour le marché italien</b><br/><br/>
+
+<b>» </b>Prise en charge <b>des besoins spécifiques du pôle italien</b><br/><br/>
+<b>» </b>Solution : traduction du site et <b>ajout d’options spécifiques aux campagnes marketing locales</b><br/><br/>
+📧 <b>Problème : Compatibilité des e-mails sur différents providers</b><br/><br/>
+
+<b>» </b>S’assurer que les e-mails créés s’affichent correctement sur <b>Outlook, Gmail et autres clients mail</b><br/><br/>
+<b>» </b>Solution : validation des composants par les intégrateurs avec <b>des tests approfondis de compatibilité et responsivité</b></div><br/><br/>
+
+<b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Expérience acquise</b><br/><br/>
+Grâce à ce projet, j’ai renforcé mes compétences en :<br/><br/>
+
+<div class="redQuote"><b>» Développement full-stack</b> avec <b style="color: #880808">Next.js</b> et <b style="color: #880808">Nest.js</b>, pour une application performante et évolutive<br/><br/>
+<b>» Optimisation de l’expérience utilisateur</b> (<b style="color: #880808">UX/UI</b>) pour un éditeur no-code accessible au marketing<br/><br/>
+<b>» Gestion avancée des bases de données</b> avec <b style="color: #880808">PostgreSQL</b>, pour une structuration efficace des e-mails et de leurs composants<br/><br/>
+<b>» Mise en place d’une architecture modulaire</b>, facilitant l’ajout de nouveaux composants et fonctionnalités<br/><br/>
+<b>» Intégration et sécurisation d’une</b> <b style="color: #880808">API</b> <b>interne</b>, permettant l’envoi d’e-mails aux clients directement depuis Mail Builder</div><br/><br/>
+
+<b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Un outil clé pour l’automatisation du marketing chez Free</b><br/><br/>
+Mail Builder est devenu un <b>outil essentiel pour le pôle marketing de Free</b>, leur permettant de <b>gagner en autonomie et en rapidité</b> dans la conception de leurs e-mails. Ce projet a également permis <b>de libérer du temps pour les intégrateurs</b>, qui n’ont plus à coder manuellement chaque campagne.<br/><br/>
+
+🚀 Un projet challengeant mêlant UX, architecture back-end et compatibilité e-mail, avec un fort impact sur la productivité de l’équipe marketing !`,
+    cover: "assets/projects/mail-builder/mail-builder-cover.png",
+    cardCover: "assets/projects/mail-builder/mail-builder-card.png",
+    stack: ["Typescript", "Next", "Tailwind", "Nest", "PostgreSQL", "Docker"],
+  },
+  {
+    date: "2025-03-09",
+    type: "PRO",
+    slug: "portfail-free",
+    title: "Portfail Free",
+    description: `<b>Portail Free</b> est une plateforme web permettant de <b>partager les actualités liées à Free ainsi qu’à ses partenaires</b> via un flux XML. Ce site joue un rôle clé dans la diffusion d’informations officielles et sponsorisées, tout en intégrant <b>Google Ads</b> pour générer des revenus publicitaires.<br/>
+
+L’objectif du projet était d’<b>offrir un site rapide</b>, <b>accessible et bien référencé</b>, tout en gérant efficacement le traitement des données XML pour alimenter les contenus dynamiquement.<br/><br/>
+
+<b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Fonctionnalités clés</b><br/><br/>
+📢 <b>Flux d’actualités dynamique</b> : les articles sont récupérés via un flux XML et mis à jour en temps réel.<br/><br/>
+📈 <b>Optimisation SEO</b> : le site est structuré pour maximiser son référencement naturel et améliorer sa visibilité sur les moteurs de recherche.<br/><br/>
+♿ <b>Accessibilité</b> : l’interface a été pensée pour être conforme aux normes d’accessibilité, permettant une navigation fluide pour tous les utilisateurs.<br/><br/>
+💰 <b>Monétisation via Google Ads</b> : intégration de publicités ciblées pour assurer une source de revenus.<br/><br/>
+
+<b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Mon rôle et contributions</b><br/><br/>
+Sur ce projet, j’ai travaillé sur plusieurs aspects techniques et fonctionnels :<br/><br/>
+✅ <b>Développement full-stack</b> avec <b>Next.js</b> pour un rendu rapide et SEO-friendly.<br/><br/>
+✅ <b>Utilisation de Strapi en tant que CMS</b> pour la gestion des articles et des paramètres du site.<br/><br/>
+✅ <b>Mise en place du parsing et du traitement du flux XML</b>, en assurant une mise à jour rapide et fiable des actualités.<br/><br/>
+✅ <b>Optimisation SEO (balises meta, OpenGraph, sitemap, SSR/SSG)</b> pour améliorer la position du site sur Google.<br/><br/>
+✅ <b>Amélioration de l’accessibilité (A11Y)</b>, en respectant les standards <b>WCAG</b> et en rendant le contenu lisible pour les lecteurs d’écran.<br/><br/>
+✅ <b>Intégration de Google Ads</b>, en veillant à <b>ne pas altérer l’expérience utilisateur</b> tout en maximisant les revenus publicitaires.<br/><br/>
+
+<b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Développement et stack technique</b><br/><br/>
+Nous avons utilisé une stack moderne et optimisée pour garantir performance, scalabilité et accessibilité :<br/><br/>
+
+<div class="blueQuote"><b>»</b> <b style="color: #3b6f9a">Next.js</b> pour un rendu SSR/SSG hybride, optimisant à la fois le SEO et la rapidité d’affichage<br/><br/>
+<b>»</b> <b style="color: #3b6f9a">Strapi</b> pour la gestion des articles et la personnalisation du contenu<br/><br/>
+<b>»</b> <b style="color: #3b6f9a">PostgreSQL</b> pour stocker et structurer les actualités récupérées<br/><br/>
+<b>»</b> <b style="color: #3b6f9a">Tailwind CSS</b> pour un design sobre et responsive<br/><br/>
+<b>»</b> <b style="color: #3b6f9a">Docker</b> pour une infrastructure stable et facilement déployable</div><br/><br/>
+
+<b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Défis et solutions techniques</b><br/><br/>
+<div class="blueQuote">⚙️ <b>Problème : Traitement du flux XML</b><br/><br/>
+
+Gestion de la récupération et de la mise en forme des articles<br/><br/>
+<b>Solution : Développement d’un parser XML performant, assurant une mise à jour fluide et rapide</b><br/><br/>
+📈 <b>Problème : Référencement SEO</b><br/><br/>
+
+Besoin d’un bon positionnement sur Google<br/><br/>
+<b>Solution : Utilisation du Server-Side Rendering (SSR) et balises SEO optimisées</b><br/><br/>
+🧑‍💻 <b>Problème : Accessibilité</b><br/><br/>
+
+Assurer une lecture et une navigation fluides pour tous<br/><br/>
+<b>Solution : Application des normes WCAG, gestion du contraste et compatibilité avec les lecteurs d’écran</b></div><br/><br/>
+
+<b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Expérience acquise</b><br/><br/>
+Ce projet m’a permis de renforcer mes compétences en :<br/><br/>
+<div class="redQuote"><b>»</b> <b style="color: #880808">Parsing et intégration de flux XML</b> pour la récupération de contenu dynamique<br/><br/>
+<b>»</b> <b style="color: #880808">SEO et optimisation de la performance web</b> avec Next.js<br/><br/>
+<b>»</b> <b style="color: #880808">Accessibilité web (A11Y)</b> et conformité aux bonnes pratiques UX<br/><br/>
+<b>»</b> <b style="color: #880808">Gestion de contenu avec Strapi</b> pour une administration fluide des articles<br/><br/>
+<b>»</b> <b style="color: #880808">Monétisation avec Google Ads</b> sans altérer l’expérience utilisateur</div><br/><br/>
+
+<b style="font-family: Space Grotesk, sans-serif; font-size: 20px">Un projet stratégique pour Free</b><br/><br/>
+Portail Free est un élément clé de l’écosystème digital de Free, offrant <b>un accès rapide et structuré aux actualités</b> tout en générant des revenus grâce à la publicité. Ce projet m’a offert <b>un équilibre entre challenges techniques et optimisation UX</b>, avec un fort impact sur la visibilité de l’entreprise.<br/><br/>
+
+🚀 Un site mêlant actualité, performance et accessibilité !`,
+    cover: "assets/projects/portail-free/portail-free-cover.png",
+    cardCover: "assets/projects/portail-free/portail-free-card.png",
     stack: ["Typescript", "Next", "Tailwind", "Strapi", "PostgreSQL", "Docker"],
   },
 ];

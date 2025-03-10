@@ -48,6 +48,8 @@ const Breadcrumb = () => {
           src={`${process.env.PUBLIC_URL}/assets/icons/home.svg`}
           alt=""
           width={24}
+          height={24}
+          aria-label="Accueil"
         />
       </a>
 
@@ -55,22 +57,23 @@ const Breadcrumb = () => {
         const isActive = index === slugs.length - 1;
 
         return (
-          <>
+          <Container key={`${item.label}-${index}`}>
             {index < slugs.length && (
               <Text fontSize="font14" fontWeight={500}>
                 {"»"}
               </Text>
             )}
+
             <Text
               as={isActive ? "p" : "a"}
               {...(!isActive && { href: item.slug })}
               fontSize="font14"
               fontWeight={isActive ? 700 : 600}
-              color={isActive ? "primary" : "black"}
+              color={isActive ? "primaryDark" : "black"}
             >
               {item.label}
             </Text>
-          </>
+          </Container>
         );
       })}
     </Container>

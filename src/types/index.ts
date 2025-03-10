@@ -30,6 +30,7 @@ type FontSize = {
 
 type Colors = {
   primary: string;
+  primaryDark: string;
   secondary: string;
   white: string;
   black: string;

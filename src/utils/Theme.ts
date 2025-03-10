@@ -31,6 +31,7 @@ const Theme: ThemeType = {
   },
   colors: {
     primary: "#4682B4",
+    primaryDark: "#3b6f9a",
     secondary: "#880808",
     white: "#FFFFFF",
     black: "#000000",

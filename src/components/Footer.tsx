@@ -11,6 +11,7 @@ import Image from "./Image";
 type SocialType = {
   src: string;
   href: string;
+  ariaLabel: string;
 };
 
 const Container = styled.div`
@@ -65,18 +66,22 @@ const Footer: FC = () => {
     {
       src: "assets/icons/resume.svg",
       href: `${window.location.origin}/assets/Emmanuel-CV.pdf`,
+      ariaLabel: "CV",
     },
     {
       src: "assets/icons/linkedin.svg",
       href: "https://www.linkedin.com/in/emmanuel-kasomo/",
+      ariaLabel: "Linkedin",
     },
     {
       src: "assets/icons/github.svg",
       href: "https://github.com/papiforce",
+      ariaLabel: "Github",
     },
     {
       src: "assets/icons/mail.svg",
       href: "mailto:kasomo.emm@gmail.com",
+      ariaLabel: "Mail",
     },
   ];
 
@@ -102,6 +107,7 @@ const Footer: FC = () => {
               href={social.href}
               target="_blank"
               rel="noreferrer"
+              aria-label={social.ariaLabel}
               style={{ width: 28, height: 28 }}
             >
               <Image

@@ -9,7 +9,7 @@ interface TemplateProps {
 const Template = styled.img<TemplateProps>`
   ${({ $width, $height }) => `
     max-height: ${$height}px;
-    max-width: ${$width}px;
+    max-width: ${$width ? `${$width}px` : "100%"};
   `}
 
   border-radius: 12px;

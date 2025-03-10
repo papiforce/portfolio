@@ -85,6 +85,7 @@ const ProjectPage = () => {
           src={`${process.env.PUBLIC_URL}/${data?.cover ?? ""}`}
           alt={data?.title ?? ""}
           height={280}
+          width={screens.tablet}
           style={{ margin: "24px 0 0" }}
         />
 

@@ -20,6 +20,10 @@ const Container = styled.a`
     flex-direction: column;
     align-items: normal;
     gap: 8px;
+
+    &:hover {
+      box-shadow: none !important;
+    }
   }
 
   max-width: 100%;
@@ -78,7 +82,7 @@ const ProjectCard = ({
           <Text
             fontSize="font14"
             fontWeight={500}
-            color="primary"
+            color="primaryDark"
             isEllipsis
             style={{ width: isSmallMobile ? 350 : 375 }}
           >

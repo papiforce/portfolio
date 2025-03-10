@@ -66,6 +66,7 @@ const Navbar: FC = () => {
               alt=""
               width={28}
               height={28}
+              aria-label="Projets"
               style={{ borderRadius: 0 }}
             />
           ) : (
@@ -73,7 +74,7 @@ const Navbar: FC = () => {
               fontFamily="Space Grotesk"
               fontSize="font18"
               fontWeight={500}
-              color={isProjectsPage ? "primary" : "black"}
+              color={isProjectsPage ? "primaryDark" : "black"}
             >
               Projets
             </Text>
