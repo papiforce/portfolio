@@ -59,7 +59,7 @@ const Template = styled.div<TemplateProps>`
 
 const Text = ({
   fontFamily = "Montserrat",
-  fontSize = "from20to14",
+  fontSize = "font16",
   fontWeight = 400,
   color = "black",
   textAlign = "left",

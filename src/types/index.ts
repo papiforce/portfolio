@@ -14,18 +14,8 @@ type FontSize = {
   font18: string;
   font20: string;
   font24: string;
-  font32: string;
-  from20to14: string;
-  from20to16: string;
-  from24to14: string;
   from24to20: string;
-  from32to18: string;
-  from34to16: string;
   from34to24: string;
-  from40to24: string;
-  from40to30: string;
-  from56to32: string;
-  from100to52: string;
 };
 
 type Colors = {

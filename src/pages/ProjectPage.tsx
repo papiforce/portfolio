@@ -77,7 +77,11 @@ const ProjectPage = () => {
   }, []);
 
   return (
-    <Layout>
+    <Layout
+      metadata={{
+        title: `${data?.title} | Emmanuel Kasomo` || "Projet inconnu",
+      }}
+    >
       <Container>
         <Breadcrumb />
 
