@@ -506,8 +506,8 @@ Mail Builder est devenu un <b>outil essentiel pour le pôle marketing de Free</b
   {
     date: "2025-03-09",
     type: "PRO",
-    slug: "portfail-free",
-    title: "Portfail Free",
+    slug: "portail-free",
+    title: "Portail Free",
     description: `<b>Portail Free</b> est une plateforme web permettant de <b>partager les actualités liées à Free ainsi qu’à ses partenaires</b> via un flux XML. Ce site joue un rôle clé dans la diffusion d’informations officielles et sponsorisées, tout en intégrant <b>Google Ads</b> pour générer des revenus publicitaires.<br/>
 
 L’objectif du projet était d’<b>offrir un site rapide</b>, <b>accessible et bien référencé</b>, tout en gérant efficacement le traitement des données XML pour alimenter les contenus dynamiquement.<br/><br/>
